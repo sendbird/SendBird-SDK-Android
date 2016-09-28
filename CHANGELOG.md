@@ -1,6 +1,6 @@
 ## Change Log
 
-### v3.0.3(Sep 13, 2016)
+### v3.0.3(Sep 27, 2016)
 * Supports Android 7.0 (Nougat) and FCM.
 * Fixed to increase unread message count only for others' message reception.
 * Improved performance and stability.
