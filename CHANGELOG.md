@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.4(Sep 30, 2016)
+* Fixed file uploading timeout.
+
 ### v3.0.3(Sep 27, 2016)
 * Supports Android 7.0 (Nougat) and FCM.
 * Fixed to increase unread message count only for others' message reception.
