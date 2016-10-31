@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.5(Oct 31, 2016)
+* Added custom type to messages.
+* Added group channel list search by member nicknames and user IDs.
+* Added creating and updating channel cover image with binary file.
+  
 ### v3.0.4(Sep 30, 2016)
 * Fixed file uploading timeout.
 
