@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.6(Nov 3, 2016)
+* Added group channel list search by a member nickname. (Search by multiple nicknames option in v3.0.5 is no more supported.)
+* Added auto-translating feature to UserMessage.
+* Improved connection performance.
+* Improved stability.
+
 ### v3.0.5(Oct 31, 2016)
 * Added custom type to messages.
 * Added group channel list search by member nicknames and user IDs.
