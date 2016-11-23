@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.8(Nov 23, 2016)
+* Fixed to update last message of group channel when UserMessage or FileMessage is successfully sent.
+* Improved stability.
+
 ### v3.0.7(Nov 4, 2016)
 * Fixed connection bug.
 
