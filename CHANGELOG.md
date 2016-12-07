@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.10(Dec 7, 2016)
+* Added GroupChannel.isPushEnabled() to check push preference for each group channel.
+* Deprecated GroupChannel.getPushPreference().
+* Fixed randomly occurring NPE crash when user join event or read receipt update event happen.
+* Improved stability.
+
 ### v3.0.9(Nov 30, 2016)
 * Added user IDs filters and query type to GroupChannelListQuery.
 * Added channel custom type for OpenChannel and GroupChannel.
