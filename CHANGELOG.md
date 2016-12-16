@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.11(Dec 16, 2016)
+* Added unique push token registration option, which makes sure to maintain only one GCM/FCM token for the current user.
+
 ### v3.0.10(Dec 7, 2016)
 * Added GroupChannel.isPushEnabled() to check push preference for each group channel.
 * Deprecated GroupChannel.getPushPreference().
