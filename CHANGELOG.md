@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.12(Dec 23, 2016)
+* Added push notification template option, which gives option to users the way to display push notification messages.
+* Improved to try connection without delay when reconnection is needed.
+
 ### v3.0.11(Dec 16, 2016)
 * Added unique push token registration option, which makes sure to maintain only one GCM/FCM token for the current user.
 
