@@ -1,7 +1,9 @@
 ## Change Log
 
-### v3.0.13(Jan 3, 2017)
+### v3.0.14(Jan 4, 2017)
 * Added thumbnail generating option when image file is uploaded.
+
+### v3.0.13(Jan 3, 2017)
 * Changed connection protocol to avoid connection reset which can occur when application runs behind proxy.
 
 ### v3.0.12(Dec 23, 2016)
