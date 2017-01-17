@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.15(Jan 18, 2017)
+* Fixed bugs returning wrong unread count of messages when users are invited to GroupChannel.
+* Fixed bugs occurring occasional crash when getReadReceipt(), getReadMembers() or etc are called.
+
 ### v3.0.14(Jan 4, 2017)
 * Added thumbnail generating option when image file is uploaded.
 
