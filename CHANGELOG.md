@@ -1,5 +1,12 @@
 ## Change Log
 
+### v3.0.16(Jan 31, 2017)
+* Added reconnect() to support explicit reconnection process.
+* Added removeAllConnectionHandlers() and removeAllChannelHandlers().
+* Improved network call performance after reconnection is established.
+* Fixed bug removing connection handlers and channel handlers when disconnect() is called.
+* Improved stability.
+
 ### v3.0.15(Jan 18, 2017)
 * Fixed bugs returning wrong unread count of messages when users are invited to GroupChannel.
 * Fixed bugs occurring occasional crash when getReadReceipt(), getReadMembers() or etc are called.
