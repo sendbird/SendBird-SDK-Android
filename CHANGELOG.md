@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.17(Feb 10, 2017)
+* Fixed bug calling ChannelHandler.onReadReceiptUpdated() even when markAsRead() is called from the same user connected on other devices.
+* Improved stability by removing occasional NPE crash on connection or reconnection.
+
 ### v3.0.16(Jan 31, 2017)
 * Added reconnect() to support explicit reconnection process.
 * Added removeAllConnectionHandlers() and removeAllChannelHandlers().
