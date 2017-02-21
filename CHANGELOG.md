@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.18(Feb 22, 2017)
+* Fixed bug GroupChannel.getReadReceipt() always returning the count of members of the channel after the first connection.
+* From now, empty string as user ID is not accepted.
+
 ### v3.0.17(Feb 10, 2017)
 * Fixed bug calling ChannelHandler.onReadReceiptUpdated() even when markAsRead() is called from the same user connected on other devices.
 * Improved stability by removing occasional NPE crash on connection or reconnection.
