@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.19(Mar 2, 2017)
+* Added file encryption and access control feature.
+* Provide serialization/deserialization for user, channel and message objects for developers to take advantage of their own local cache.
+* Sender is excluded from read receipt.
+
 ### v3.0.18(Feb 22, 2017)
 * Fixed bug GroupChannel.getReadReceipt() always returning the count of members of the channel after the first connection.
 * From now, empty string as user ID is not accepted.
