@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.20(Mar 6, 2017)
+* Added getting messages methods to BaseChannel and they support type/customType filtering.
+* Added option for using channel member's profile URL and nickname as message sender's.
+* Support updating channel member's profile URL and nickname automatically.
+* Fixed bug GroupChannel.getUnreadMessageCount() not returning correct value.
+
 ### v3.0.19(Mar 2, 2017)
 * Added file encryption and access control feature.
 * Provide serialization/deserialization for user, channel and message objects for developers to take advantage of their own local cache.
