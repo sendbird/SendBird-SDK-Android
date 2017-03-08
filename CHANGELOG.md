@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.21(Mar 8, 2017)
+* Added getTotalUnreadChannelCount() to GroupChannel to enable you get channel count of having unread messages.
+* Fixed getTotalUnreadMessageCount() to return correct value when it is called in ChannelHandler.onChannelChanged after markAsRead() is called.
+
 ### v3.0.20(Mar 6, 2017)
 * Added getting messages methods to BaseChannel and they support type/customType filtering.
 * Added option for using channel member's profile URL and nickname as message sender's.
