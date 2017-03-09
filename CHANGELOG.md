@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.22(Mar 9, 2017)
+* Fixed bug GroupChannel.getUnreadMessageCount() returning wrong value not covered on v3.0.20.
+
 ### v3.0.21(Mar 8, 2017)
 * Added getTotalUnreadChannelCount() to GroupChannel to enable you get channel count of having unread messages.
 * Fixed getTotalUnreadMessageCount() to return correct value when it is called in ChannelHandler.onChannelChanged after markAsRead() is called.
