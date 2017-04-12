@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.23(Apr 12, 2017)
+* Added real size property for generated thumbnails.
+* Added progress handler for file uploading.
+* Support file uploading on background.
+
 ### v3.0.22(Mar 9, 2017)
 * Fixed bug GroupChannel.getUnreadMessageCount() returning wrong value not covered on v3.0.20.
 
