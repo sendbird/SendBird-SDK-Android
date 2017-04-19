@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.24(Apr 19, 2017)
+* Added connect() custom host feature.
+
 ### v3.0.23(Apr 12, 2017)
 * Added real size property for generated thumbnails.
 * Added progress handler for file uploading.
