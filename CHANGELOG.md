@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.25(May 9, 2017)
+* Fixed custom host bug.
+
 ### v3.0.24(Apr 19, 2017)
 * Added connect() custom host feature.
 
