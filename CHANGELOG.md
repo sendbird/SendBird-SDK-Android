@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.26(May 19, 2017)
+* Added OpenChannel deletion. 
+
 ### v3.0.25(May 9, 2017)
 * Fixed custom host bug.
 
