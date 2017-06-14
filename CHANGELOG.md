@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.27(Jun 15, 2017)
+* Added custom type filter to OpenChannelListQuery and GroupChannelListQuery.
+* Added messaging editing feature.
+* Added file uploading cancel.
+
 ### v3.0.26(May 19, 2017)
 * Added OpenChannel deletion. 
 
