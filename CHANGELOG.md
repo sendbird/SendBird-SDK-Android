@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.28(Jun 20, 2017)
+* Fixed bug BaseMessage.buildFromSerializedData incurring crash for messages serialized by versions prior to v3.0.27.
+
 ### v3.0.27(Jun 15, 2017)
 * Added custom type filter to OpenChannelListQuery and GroupChannelListQuery.
 * Added messaging editing feature.

@@ -3,7 +3,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/smilefam/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/smilefam/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.0.27-green.svg)](https://github.com/smilefam/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.27)
+[![Maven](https://img.shields.io/badge/maven-v3.0.28-green.svg)](https://github.com/smilefam/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.28)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/smilefam/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Documentation
