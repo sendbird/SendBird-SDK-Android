@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.29(Jul 4, 2017)
+* Added feature to set and get push notification sound for the logged-in user.
+
 ### v3.0.28(Jun 20, 2017)
 * Fixed bug BaseMessage.buildFromSerializedData incurring crash for messages serialized by versions prior to v3.0.27.
 
