@@ -3,8 +3,8 @@
 ### v3.0.30(Jul 10, 2017)
 * Support users to accept or decline other users' invitation to a group channel.
 * Added group channel join preference for accepting invitation automatically.
-* **Notice** From this version, the return type of GroupChannel methods previously returning **List\<User\>**
-such as GroupChannel.getMembers, GroupChannel.getTypingMembers and etc. now return **List\<Member\>**.
+* **Notice**: From this version, the return type of GroupChannel methods previously returning `List<User>`
+such as GroupChannel.getMembers, GroupChannel.getTypingMembers and etc. now return `List<Member>`.
 
 ### v3.0.29(Jul 4, 2017)
 * Added feature to set and get push notification sound for the logged-in user.
