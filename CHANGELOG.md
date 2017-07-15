@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.31(Jul 15, 2017)
+* Added messaging copy from one channel to other channels (Sender must be a member or participant of the channels).
+
 ### v3.0.30(Jul 10, 2017)
 * Support users to accept or decline other users' invitation to a group channel.
 * Added group channel join preference for accepting invitation automatically.
