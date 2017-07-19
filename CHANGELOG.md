@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.32(Jul 20, 2017)
+* No more crash when profile image with special characters in the file name is uploaded. 
+
 ### v3.0.31(Jul 15, 2017)
 * Added messaging copy from one channel to other channels (Sender must be a member or participant of the channels).
 
