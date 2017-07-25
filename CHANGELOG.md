@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.33(Jul 24, 2017)
+* Minor bug fixes. 
+
 ### v3.0.32(Jul 20, 2017)
 * No more crash when profile image with special characters in the file name is uploaded. 
 
