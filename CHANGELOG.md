@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.34(Aug 12, 2017)
+* Added ChannelHandler callback on MetaData and MetaCounters creation, update and deletion.
+* Added channel name filter for GroupChannelListQuery.
+* Added getInviter() to GroupChannel.
+
 ### v3.0.33(Jul 24, 2017)
 * Minor bug fixes. 
 
