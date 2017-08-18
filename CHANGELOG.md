@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.35(Aug 18, 2017)
+* Added new group channel hide to give you change to select whether channel member can load previous messages when the channel reappears.
+* Added user MetaData feature.
+* Added freeze status flag to open channel.
+
 ### v3.0.34(Aug 12, 2017)
 * Added ChannelHandler callback on MetaData and MetaCounters creation, update and deletion.
 * Added channel name filter for GroupChannelListQuery.
