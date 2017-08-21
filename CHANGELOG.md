@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.36(Aug 21, 2017)
+* Added isBlockedByMe and isBlockingMe flag to group channel members.
+* Added getMessageChangeLogsByToken to channel to track updated or deleted messages.
+
 ### v3.0.35(Aug 18, 2017)
 * Added new group channel hide to give you change to select whether channel member can load previous messages when the channel reappears.
 * Added user MetaData feature.
