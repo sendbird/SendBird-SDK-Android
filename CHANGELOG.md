@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.37(Aug 29, 2017)
+* Added getChannelCount to GroupChannel.
+* Added resetMyHistory to GroupChannel not to load messages created before the reset.
+* Added network detection and auto reconnect when the network is detected. (SendBird.setNetworkAwarenessReconnection is provided to enable this option - default true)
+
 ### v3.0.36(Aug 21, 2017)
 * Added isBlockedByMe and isBlockingMe flag to group channel members.
 * Added getMessageChangeLogsByToken to channel to track updated or deleted messages.
