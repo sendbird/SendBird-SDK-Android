@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.38(Sep 1, 2017)
+* Fixed occasional crash on blocking or unblocking users. 
+
 ### v3.0.37(Aug 29, 2017)
 * Added getChannelCount to GroupChannel.
 * Added resetMyHistory to GroupChannel not to load messages created before the reset.
