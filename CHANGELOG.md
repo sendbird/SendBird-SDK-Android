@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.39(Nov 8, 2017)
+* Added isHidden() to GroupChannel.
+* Stabilized connection.
+
 ### v3.0.38(Sep 1, 2017)
 * Fixed occasional crash on blocking or unblocking users. 
 
