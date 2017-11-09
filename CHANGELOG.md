@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.40(Nov 9, 2017)
+* Fixed bugs handler for connect is not called when the application becomes foreground.
+
 ### v3.0.39(Nov 8, 2017)
 * Added isHidden() to GroupChannel.
 * Stabilized connection.
