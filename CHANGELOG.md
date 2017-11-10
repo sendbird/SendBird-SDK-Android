@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.41(Nov 10, 2017)
+* Added onChannelHidden() to ChannelHandler.
+
 ### v3.0.40(Nov 9, 2017)
 * Fixed bugs handler for connect is not called when the application becomes foreground.
 
