@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.42(Nov 13, 2017)
+* Fixed GroupChannel isHidden() bug.
+
 ### v3.0.41(Nov 10, 2017)
 * Added onChannelHidden() to ChannelHandler.
 
