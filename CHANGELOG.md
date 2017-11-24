@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.43(Nov 25, 2017)
+* Stabilized to support Android O. 
+
 ### v3.0.42(Nov 13, 2017)
 * Fixed GroupChannel isHidden() bug.
 
