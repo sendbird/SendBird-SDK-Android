@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.44(Nov 29, 2017)
+* Modified init() method.
+
 ### v3.0.43(Nov 25, 2017)
 * Stabilized to support Android O. 
 
