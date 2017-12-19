@@ -1,6 +1,6 @@
 ## Change Log
 
-### v3.0.45(DEC 8, 2017)
+### v3.0.45(Dec 8, 2017)
 * Fix occasional crash on connecting.
 * Modified getConnectionState() method.
 * Added isActive() to User.
