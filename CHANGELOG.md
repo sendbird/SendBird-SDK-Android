@@ -1,7 +1,10 @@
 ## Change Log
 
+### v3.0.46(Dec 19, 2017)
+* Improved connection stability.
+
 ### v3.0.45(Dec 8, 2017)
-* Fix occasional crash on connecting.
+* Improved connection stability.
 * Modified getConnectionState() method.
 * Added isActive() to User.
 
@@ -25,7 +28,7 @@
 * Stabilized connection.
 
 ### v3.0.38(Sep 1, 2017)
-* Fixed occasional crash on blocking or unblocking users. 
+* Fixed a minor bug on blocking or unblocking users. 
 
 ### v3.0.37(Aug 29, 2017)
 * Added getChannelCount to GroupChannel.
