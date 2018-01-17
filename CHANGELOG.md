@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.48(Jan 16, 2017)
+* Improved stabilization of calling `disconnect()` while sending messages or mark as read.
+
 ### v3.0.46(Dec 19, 2017)
 * Improved connection stability.
 
