@@ -1,11 +1,55 @@
 ## Change Log
 
+### v3.0.50(Feb 5, 2018)
+* Added createPublicGroupChannelListQuery() in GroupChannel.
+* Added isPublic() in GroupChannel.
+* Added join in GroupChannel.
+* Added CHANNEL_NAME_ALPHABETICAL in Order in GroupChannelListQuery.
+* Added PublicChannelFilter in GroupChannelListQuery.
+* Added setCustomTypeStartsWithFilter() in GroupChannelListQuery.
+* Added setPublicChannelFilter() in GroupChannelListQuery.
+* Added setPublic() in GroupChannelParams.
+* Added setChannelUrl() in GroupChannelParams.
+* Added PublicGroupChannelListQuery.
+* Improved stabilization.
+
 ### v3.0.49(Jan 28, 2018)
+* Added createChannel() with GroupChannelParams in GroupChannel.
+* Added createMemberListQuery() in GroupChannel.
+* Added isSuper() in GroupChannel.
+* Added updateChannel() with GroupChannelParams in GroupChannel.
+* Deprecated getLastSeenAtBy() in GroupChannel.
+* Deprecated getLastSeenAtByWithUserId() in GroupChannel.
+* Added SuperChannelFilter in GroupChannelListQuery.
+* Added setSuperChannelFilter() in GroupChannelListQuery.
+* Added GroupChannelMemberListQuery.
+* Added GroupChannelParams.
 
 ### v3.0.48(Jan 16, 2018)
 * Improved stabilization of calling `disconnect()` while sending messages or mark as read.
+* Deprecated markAsReadAll() in GroupChannel.
+* Added INVITED_BY_FRIEND, INVITED_BY_NON_FRIEND in setMemberStateFilter() in GroupChannelListQuery.
+* Added markAsReadAll() in SendBird.
+* Added markAsReadWithChannelUrls() in SendBird.
+* Fixed Minor bugs.
 
 ### v3.0.47(Jan 5, 2018)
+* Added FriendListQuery.
+* Added setCustomTypesFilter() in GroupChannelListQuery.
+* Added addUserEventHandler() in SendBird.
+* Added removeUserEventHandler() in SendBird.
+* Added removeAllUserEventHandlers() in SendBird.
+* Added addFriends() in SendBird.
+* Added deleteFriends() in SendBird.
+* Added deleteFriend() in SendBird.
+* Added uploadFriendDiscoveries() in SendBird.
+* Added deleteFriendDiscoveries() in SendBird.
+* Added deleteFriendDiscovery() in SendBird.
+* Added getFriendChangeLogsByToken() in SendBird.
+* Added createFriendListQuery() in SendBird.
+* Added getOriginalProfileUrl() in User.
+* Improved ConnectHandler callback.
+* Fixed Minor bugs.
 
 ### v3.0.46(Dec 19, 2017)
 * Improved connection stability.
