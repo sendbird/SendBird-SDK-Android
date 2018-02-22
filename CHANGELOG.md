@@ -1,5 +1,7 @@
 ## Change Log
 
+### v3.0.51(Feb 21, 2018)
+
 ### v3.0.50(Feb 5, 2018)
 * Added createPublicGroupChannelListQuery() in GroupChannel.
 * Added isPublic() in GroupChannel.
