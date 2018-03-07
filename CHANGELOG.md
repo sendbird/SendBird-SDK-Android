@@ -1,6 +1,41 @@
 ## Change Log
 
-### v3.0.51(Feb 21, 2018)
+### v3.0.52(Mar 7, 2018)
+* Added setEphemeral(boolean isEphemeral) in GroupChannelParams to create a channel not allowing message retention.
+* Added isEphemeral() in BaseChannel.
+* Added BaseMessageParams, UserMessageParams and FileMessageParams to send messages in object form.
+* BaseMessageParams support mentioned messages by setMentionedUserIds and setMentionedUsers.
+* Added sendUserMessage(UserMessageParams params, SendUserMessageHandler handler) in BaseChannel.
+* Added sendFileMessage(FileMessageParams params, SendFileMessageHandler handler) in BaseChannel.
+* Added sendFileMessage(FileMessageParams params, SendFileMessageWithProgressHandler handler) in BaseChannel.
+* Added onMentionReceived(BaseChannel channel, BaseMessage message) in ChannelHandler to receive mentioned message.
+* Added getMentionedUsers() in BaseMessage.
+* Added getMyMemberState() in GroupChannel for current logged-in user's joined state for the channel.
+* Deprecated MemberState enumerator in GroupChannel and added MemberStateFilter in GroupChannelListQuery enumerator instead.
+* Deprecated getChannelCount(MemberState memberState, GroupChannelChannelCountHandler handler) in GroupChannel.
+* Added getChannelCount(GroupChannelListQuery.MemberStateFilter memberStateFilter, GroupChannelChannelCountHandler handler) in GroupChannel.
+* Deprecated setMemberStateFilter(GroupChannel.MemberState memberState) in GroupChannelListQuery.
+* Added setMemberStateFilter(MemberStateFilter memberStateFilter) in GroupChannelListQuery.
+* Deprecated getState() in Member and added getMemberState() instead.
+* Improved stabilization.
+* Fix minor bug.
+
+### v3.0.51(Feb 22, 2018)
+* Added setOperators() and setOperatorUserIds() in GroupChannelParams.
+* Added freeze(), unfreeze() and isFrozen() in GroupChannel.
+* Added banUser() and banUserWithUserId() in GroupChannel.
+* Added unbanUser() and unbanUserWithUserId() in GroupChannel.
+* Added muteUser() and muteUserWithUserId() in GroupChannel.
+* Added unmuteUser() and unmuteUserWithUserId() in GroupChannel.
+* Added createBannedUserListQuery() in GroupChannel.
+* Added setOperatorFilter() and setMutedMemberFilter() in GroupChannelMemberListQuery.
+* Modified onUserBanned(OpenChannel channel, User user) to onUserBanned(BaseChannel channel, User user) in ChannelHandler.
+* Modified onUserUnbanned(OpenChannel channel, User user) to onUserUnbanned(BaseChannel channel, User user) in ChannelHandler.
+* Modified onUserMuted(OpenChannel channel, User user) to onUserMuted(BaseChannel channel, User user) in ChannelHandler.
+* Modified onUserUnmuted(OpenChannel channel, User user) to onUserUnmuted(BaseChannel channel, User user) in ChannelHandler.
+* Modified onChannelFrozen(OpenChannel channel, User user) to onChannelFrozen(BaseChannel channel, User user) in ChannelHandler.
+* Modified onChannelUnfrozen(OpenChannel channel, User user) to onChannelUnfrozen(BaseChannel channel, User user) in ChannelHandler.
+* Now sender in UserMessage and FileMessage support getMetaData().
 
 ### v3.0.50(Feb 5, 2018)
 * Added createPublicGroupChannelListQuery() in GroupChannel.
