@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.53(Mar 12, 2018)
+* Added setConnectionTimeout() to SendBird.Options to support configurable connection timeout.
+
 ### v3.0.52(Mar 7, 2018)
 * Added setEphemeral(boolean isEphemeral) in GroupChannelParams to create a channel not allowing message retention.
 * Added isEphemeral() in BaseChannel.
