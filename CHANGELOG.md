@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.54(Mar 15, 2018)
+* Fixed `groupChannel.getMyMemberState()` returning not accurate value for the 1st time.
+
 ### v3.0.53(Mar 12, 2018)
 * Added setConnectionTimeout() to SendBird.Options to support configurable connection timeout.
 
