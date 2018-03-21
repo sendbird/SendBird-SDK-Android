@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.55(Mar 21, 2018)
+* From now, an ephemeral GroupChannel maintains the last message and unread message count after the connection is made.
+
 ### v3.0.54(Mar 15, 2018)
 * Fixed `groupChannel.getMyMemberState()` returning not accurate value for the 1st time.
 
