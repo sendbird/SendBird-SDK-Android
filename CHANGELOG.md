@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.56(Mar 29, 2018)
+* Added getTotalUnreadMessageCount() with channel custom types filter in GroupChannel.
+* Added setPushNotificationDeliveryOption(PushNotificationDeliveryOption pushNotificationDeliveryOption) in UserMessageParams and FileMessageParams.
+
 ### v3.0.55(Mar 21, 2018)
 * From now, an ephemeral GroupChannel maintains the last message and unread message count after the connection is made.
 
