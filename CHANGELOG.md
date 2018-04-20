@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.57(Apr 19, 2018)
+* Added createOperatorListQuery() in BaseChannel and OperatorListQuery.
+* Deprecated setOperatorFilter(OperatorFilter operatorFilter) and OperatorFilter in GroupChannelMemberListQuery.
+
 ### v3.0.56(Mar 29, 2018)
 * Added getTotalUnreadMessageCount() with channel custom types filter in GroupChannel.
 * Added setPushNotificationDeliveryOption(PushNotificationDeliveryOption pushNotificationDeliveryOption) in UserMessageParams and FileMessageParams.
