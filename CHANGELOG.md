@@ -1,6 +1,7 @@
 ## Change Log
 
 ### v3.0.58(May 2, 2018)
+* Now GroupChannelMemberListQuery returns the member list in nickname alphabetical order.
 * Improved connection stability.
 
 ### v3.0.57(Apr 19, 2018)
