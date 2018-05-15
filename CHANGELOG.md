@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.59(May 15, 2018)
+* Added getTotalUnreadMessageCount() with GroupChannelTotalUnreadMessageCountParams in GroupChannel to support filter for total unread message count.
+* Added getMyRole() in GroupChannel to specify the current user is operator of the channel or not.
+
 ### v3.0.58(May 2, 2018)
 * Now GroupChannelMemberListQuery returns the member list in nickname alphabetical order.
 * Improved connection stability.
