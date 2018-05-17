@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.60(May 16, 2018)
+* Fixed an occasional member count mismatch in a super group channel.
+
 ### v3.0.59(May 15, 2018)
 * Added getTotalUnreadMessageCount() with GroupChannelTotalUnreadMessageCountParams in GroupChannel to support filter for total unread message count.
 * Added getMyRole() in GroupChannel to specify the current user is operator of the channel or not.
