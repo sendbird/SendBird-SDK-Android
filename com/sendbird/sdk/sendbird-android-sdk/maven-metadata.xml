@@ -3,7 +3,7 @@
   <groupId>com.sendbird.sdk</groupId>
   <artifactId>sendbird-android-sdk</artifactId>
   <versioning>
-    <release>3.0.60</release>
+    <release>3.0.61</release>
     <versions>
       <version>2.0.1</version>
       <version>2.0.2</version>
@@ -96,7 +96,8 @@
       <version>3.0.58</version>
       <version>3.0.59</version>
       <version>3.0.60</version>
+      <version>3.0.61</version>
     </versions>
-    <lastUpdated>20180517071119</lastUpdated>
+    <lastUpdated>20180601071934</lastUpdated>
   </versioning>
 </metadata>

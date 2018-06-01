@@ -1,4 +1,7 @@
 ## Change Log
+### v3.0.61(Jun 1, 2018)
+* Added a typing indicator throttle option in SendBird.Options.
+* Fixed a minor bug when uploading file in background.
 
 ### v3.0.60(May 16, 2018)
 * Fixed an occasional member count mismatch in a super group channel.
