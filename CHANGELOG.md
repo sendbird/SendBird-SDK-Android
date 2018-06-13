@@ -1,4 +1,10 @@
 ## Change Log
+### v3.0.62(Jun 13, 2018)
+* Added getJoinedMemberCount() in GroupChannel to show the total count of joined users in a GroupChannel.
+* Added getMyMutedState() in GroupChannel to show the state of the connected user in a GroupChannel.
+* Added setMemberStateFilter() in GroupChannelMemberListQuery to search members based on the state of the member in a GroupChannel.
+* Added getUnreadItemCount() in GroupChannel with enum UnreadItemKey { NONSUPER_UNREAD_MESSAGE_COUNT, SUPER_UNREAD_MESSAGE_COUNT, NONSUPER_INVITATION_COUNT, SUPER_INVITATION_COUNT }.
+
 ### v3.0.61(Jun 1, 2018)
 * Added a typing indicator throttle option in SendBird.Options.
 * Fixed a minor bug when uploading file in background.
