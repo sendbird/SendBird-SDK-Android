@@ -1,4 +1,8 @@
 ## Change Log
+### v3.0.63(Jun 22, 2018)
+* Added getMyCountPreference() and setMyCountPreference() in GroupChannel.
+* Added setNicknameStartsWithFilter() in GroupChannelMemberListQuery.
+
 ### v3.0.62(Jun 13, 2018)
 * Added getJoinedMemberCount() in GroupChannel to show the total count of joined users in a GroupChannel.
 * Added getMyMutedState() in GroupChannel to show the state of the connected user in a GroupChannel.
