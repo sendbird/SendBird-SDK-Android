@@ -1,4 +1,11 @@
 ## Change Log
+### v3.0.64(Jun 29, 2018)
+* Added getUnreadMentionCount() in GroupChannel.
+* Added UNREAD_MENTION_COUNT_ONLY in CountPreference in GroupChannel.
+* Added GROUP_CHANNEL_UNREAD_MESSAGE_COUNT, GROUP_CHANNEL_UNREAD_MENTION_COUNT, GROUP_CHANNEL_INVITATION_COUNT, NONSUPER_UNREAD_MENTION_COUNT, SUPER_UNREAD_MENTION_COUNT in enum UnreadItemKey in GroupChannel.
+* Added getMentionType() in BaseMessage with enum MentionType { USERS, CHANNEL } in BaseMessageParams.
+* Added setMentionType() in UserMessageParams and FileMessageParams.
+
 ### v3.0.63(Jun 22, 2018)
 * Added getMyCountPreference() and setMyCountPreference() in GroupChannel.
 * Added setNicknameStartsWithFilter() in GroupChannelMemberListQuery.
