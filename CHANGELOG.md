@@ -1,4 +1,8 @@
 ## Change Log
+### v3.0.66(Jul 13, 2018)
+* Added load(MessageListQueryResult handler), setLimit(), setReverse(), setMessageTypeFilter(), setCustomTypeFilter(), setSenderUserIdsFilter() in PreviousMessageListQuery.
+* Added getNextMessagesByTimestamp(), getPreviousMessagesByTimestamp(), getPreviousAndNextMessagesByTimestamp(), getNextMessagesById(), getPreviousMessagesById(), getPreviousAndNextMessagesById() with sendUserIds parameter in BaseChannel.
+
 ### v3.0.65(Jul 6, 2018)
 * Disabled to put the current user into mentionedUsers, mentionedUserIds in UserMessageParams and FileMessageParams.
 * Changed not to increase unreadMentionCount and not to call onMentionReceived for CHANNEL mention by the current user (i.e. the message sender is the current user).
