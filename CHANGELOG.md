@@ -1,4 +1,7 @@
 ## Change Log
+### v3.0.67(Jul 20, 2018)
+* Minor bug fixed.
+
 ### v3.0.66(Jul 13, 2018)
 * Added load(MessageListQueryResult handler), setLimit(), setReverse(), setMessageTypeFilter(), setCustomTypeFilter(), setSenderUserIdsFilter() in PreviousMessageListQuery.
 * Added getNextMessagesByTimestamp(), getPreviousMessagesByTimestamp(), getPreviousAndNextMessagesByTimestamp(), getNextMessagesById(), getPreviousMessagesById(), getPreviousAndNextMessagesById() with sendUserIds parameter in BaseChannel.
