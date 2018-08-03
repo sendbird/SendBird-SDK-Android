@@ -1,4 +1,7 @@
 ## Change Log
+### v3.0.68(Aug 3, 2018)
+* Added getInvitedAt() in GroupChannel.
+
 ### v3.0.67(Jul 20, 2018)
 * Minor bug fixed.
 
