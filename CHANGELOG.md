@@ -1,4 +1,8 @@
 ## Change Log
+### v3.0.69(Aug 16, 2018)
+* Fixed a bug occasionally occurring when a group channel is created with multiple users.
+* Fixed TLS handshake related bug in Android 8.1.0.
+
 ### v3.0.68(Aug 3, 2018)
 * Added getInvitedAt() in GroupChannel.
 
