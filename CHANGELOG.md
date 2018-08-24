@@ -1,5 +1,14 @@
 ## Change Log
-### v3.0.70(Aug 20, 2018)
+### v3.0.71(Aug 24, 2018)
+* Added updateUserMessage() with UserMessageParams in BaseChannel.
+* Added updateFileMessage() with FileMessageParams in BaseChannel.
+* Added UserMessageParams() default constructor in UserMessageParams.
+* Added setMessage() in UserMessageParams.
+* Added FileMessageParams() default constructor in FileMessageParams.
+* Added setFileUrl() and setFile() in FileMessageParams.
+* Minor bug fixed.
+
+### v3.0.70(Aug 20, 2018)
 * Improved connection management.
 
 ### v3.0.69(Aug 16, 2018)
