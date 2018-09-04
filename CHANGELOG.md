@@ -1,4 +1,8 @@
 ## Change Log
+### v3.0.72(Sep 4, 2018)
+* Added SendBird.Options.useUiThreadForCallbacks() to give developers an option for threads the callbacks are running. By default, it is UI thread but you can choose to run on background threads.
+* Fixed minor bugs.
+
 ### v3.0.71(Aug 24, 2018)
 * Added updateUserMessage() with UserMessageParams in BaseChannel.
 * Added updateFileMessage() with FileMessageParams in BaseChannel.
