@@ -1,6 +1,9 @@
 ## Change Log
+### v3.0.74(Sep 14, 2018)
+* Improved stability.
+
 ### v3.0.73(Sep 10, 2018)
-* From now, userMemberAsMessageSender() option is true by default.
+* From now, useMemberAsMessageSender() option is true by default.
 * Fixed a bug previous messages not showing the senders' latest user metadata.
 
 ### v3.0.72(Sep 4, 2018)
