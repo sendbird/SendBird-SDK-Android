@@ -1,4 +1,33 @@
 ## Change Log
+### v3.0.75(Sep 21, 2018)
+* Added getTotalUnreadMessageCount(GroupChannel.GroupChannelTotalUnreadMessageCountHandler handler) in SendBird.
+* Added getTotalUnreadMessageCount(List<String> channelCustomTypes, GroupChannel.GroupChannelTotalUnreadMessageCountHandler handler) in SendBird.
+* Added getTotalUnreadMessageCount(GroupChannelTotalUnreadMessageCountParams params, GroupChannel.GroupChannelTotalUnreadMessageCountHandler handler) in SendBird.
+* Added getUnreadItemCount(Collection<GroupChannel.UnreadItemKey> keys, GroupChannel.GroupChannelGetUnreadItemCountHandler handler) in SendBird.
+* Added getTotalUnreadChannelCount(GroupChannel.GroupChannelTotalUnreadChannelCountHandler handler) in SendBird.
+* Added getGroupChannelCount(GroupChannelListQuery.MemberStateFilter memberStateFilter, GroupChannel.GroupChannelChannelCountHandler handler) in SendBird.
+* Added getReadMembers(BaseMessage message, boolean includeAllMembers), getUnreadMembers(BaseMessage message, boolean includeAllMembers) and getReadStatus(boolean includeAllMembers) in GroupChannel.
+* Added a ERR_CONNECTION_CANCELED error code for the connect cancel event which usually occurs on disconnect while connecting.
+* Deprecated CLOSING in enum ConnectionState in SendBird.
+* Deprecated createChannel(List<User> users, boolean isDistinct, String name, Object coverUrlOrImage, String data, GroupChannelCreateHandler handler) in GroupChannel.
+* Deprecated createChannelWithUserIds(List<String> userIds, boolean isDistinct, String name, Object coverUrlOrImage, String data, GroupChannelCreateHandler handler) in GroupChannel.
+* Deprecated updateChannel(boolean isDistinct, String name, Object coverUrlOrImage, String data, GroupChannelUpdateHandler handler) in GroupChannel.
+* Deprecated getTotalUnreadMessageCount(GroupChannelTotalUnreadMessageCountHandler handler) in GroupChannel.
+* Deprecated getTotalUnreadMessageCount(List<String> channelCustomTypes, GroupChannelTotalUnreadMessageCountHandler handler) in GroupChannel.
+* Deprecated getTotalUnreadMessageCount(GroupChannelTotalUnreadMessageCountParams params, GroupChannelTotalUnreadMessageCountHandler handler) in GroupChannel.
+* Deprecated getUnreadItemCount(Collection<UnreadItemKey> keys, GroupChannelGetUnreadItemCountHandler handler) in GroupChannel.
+* Deprecated getTotalUnreadChannelCount(GroupChannelTotalUnreadChannelCountHandler handler) in GroupChannel.
+* Deprecated getChannelCount(GroupChannelListQuery.MemberStateFilter memberStateFilter, GroupChannelChannelCountHandler handler) in GroupChannel.
+* Deprecated getReadMembers(BaseMessage message), getUnreadMembers(BaseMessage message) and getReadStatus() in GroupChannel.
+* Deprecated createChannel(String name, Object coverUrlOrImage, String data, OpenChannelCreateHandler handler) in OpenChannel.
+* Deprecated createChannel(String name, Object coverUrlOrImage, String data, List<User> operatorUsers, OpenChannelCreateHandler handler) in OpenChannel.
+* Deprecated updateChannel(String name, Object coverUrlOrImage, String data, List<User> operatorUsers, OpenChannelUpdateHandler handler) in OpenChannel.
+* Deprecated sendFileMessage(File file, String name, String type, int size, String data, String customType, SendFileMessageHandler handler) in BaseChannel.
+* Deprecated sendFileMessage(File file, String name, String type, int size, String data, String customType, SendFileMessageWithProgressHandler handler) in BaseChannel.
+* Deprecated sendUserMessage(String message, String data, SendUserMessageHandler handler) in BaseChannel.
+* Deprecated sendUserMessage(String message, String data, String customType, SendUserMessageHandler handler) in BaseChannel.
+* Fixed minor bugs.
+
 ### v3.0.74(Sep 14, 2018)
 * Improved stability.
 
