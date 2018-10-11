@@ -1,4 +1,7 @@
 ## Change Log
+### v3.0.76(Oct 11, 2018)
+* Improved stability.
+
 ### v3.0.75(Sep 21, 2018)
 * Added getTotalUnreadMessageCount(GroupChannel.GroupChannelTotalUnreadMessageCountHandler handler) in SendBird.
 * Added getTotalUnreadMessageCount(List<String> channelCustomTypes, GroupChannel.GroupChannelTotalUnreadMessageCountHandler handler) in SendBird.
