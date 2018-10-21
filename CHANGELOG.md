@@ -1,4 +1,8 @@
 ## Change Log
+### v3.0.77(Oct 21, 2018)
+* Added getLastConnectedAt() in SendBird.
+* Fixed minor bugs.
+
 ### v3.0.76(Oct 11, 2018)
 * Improved stability.
 
