@@ -1,4 +1,8 @@
 ## Change Log
+
+### v3.0.78(Oct 24, 2018)
+* Stabilized updateCurrentUserInfoWithProfileImage().
+
 ### v3.0.77(Oct 21, 2018)
 * Added getLastConnectedAt() in SendBird.
 * Fixed minor bugs.
