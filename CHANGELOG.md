@@ -1,4 +1,11 @@
 ## Change Log
+### v3.0.79(Oct 26, 2018)
+* Added getMyMutedInfo() in BaseChannel.
+* Added muteUser(User user, String description, int seconds, GroupChannelMuteHandler handler) in GroupChannel.
+* Added muteUserWithUserId(String userId, String description, int seconds, GroupChannelMuteHandler handler) in GroupChannel.
+* Added muteUser(User user, String description, int seconds, OpenChannelMuteHandler handler) in OpenChannel.
+* Added muteUserWithUserId(String userId, String description, int seconds, OpenChannelMuteHandler handler) in OpenChannel.
+* Added setOrder(Order.METADATA_VALUE_ALPHABETICAL) with setMetaDataOrderKeyFilter() in GroupChannelListQuery and PublicGroupChannelListQuery.
 
 ### v3.0.78(Oct 24, 2018)
 * Stabilized updateCurrentUserInfoWithProfileImage().
