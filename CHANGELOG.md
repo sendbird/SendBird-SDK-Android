@@ -1,4 +1,11 @@
 ## Change Log
+### v3.0.80(Oct 31, 2018)
+* Added registerScheduledUserMessage(ScheduledUserMessageParams params, RegisterScheduledUserMessageHandler handler) in GroupChannel.
+* Added ScheduledUserMessageParams and ScheduledUserMessage.
+* Added setTranslationTargetLanguages(List<String> targetLanguages) and deprecated setTargetLanguages(List<String> targetLanguages) in UserMessageParams.
+* Improved stability.
+* Fixed minor bugs.
+
 ### v3.0.79(Oct 26, 2018)
 * Added getMyMutedInfo() in BaseChannel.
 * Added muteUser(User user, String description, int seconds, GroupChannelMuteHandler handler) in GroupChannel.
