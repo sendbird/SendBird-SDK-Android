@@ -1,5 +1,12 @@
 ## Change Log
 
+### v3.0.82 (Nov 15, 2018)
+* Changed type of getSender() in UserMessage and FileMessage from User to a new class Sender which extends User.
+* Sender has isBlockedByMe() which indicates that the message sender is blocked by the current user (default: false).
+* isBlockedByMe() is valid in GroupChannel only.
+* Message from blocked users is delivered only when block_mode in SendBird application is set to explicit mode. Otherwise, it's not visible nor delivered.
+* Fixed minor bugs.
+
 ### v3.0.81 (Nov 8, 2018)
 * Added ApplicationUserListQuery, BlockedUserListQuery, ParticipantListQuery, MutedUserListQuery and BannedUserListQuery classes.
 * Added setUserIdsFilter(List<String> userIds) and setMetaDataFilter(String metaDataKey, List<String> metaDataValues) in ApplicationUserListQuery.
