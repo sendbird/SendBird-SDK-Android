@@ -1,5 +1,24 @@
 ## Change Log
 
+### v3.0.83 (Nov 22, 2018)
+* Added `createDistinctChannelIfNotExist(GroupChannelParams params, GroupChannelCreateDistinctChannelIfNotExistHandler handler)` in `GroupChannel`.
+   * It creates distinct channel and gets the channel with `isCreated` flag which represents whether the channel is actually created or not.
+* Added `hide(boolean hidePreviousMessages, boolean allowAutoUnhide, GroupChannelHideHandler handler)` in `GroupChannel`.
+* Added `unhide(GroupChannelUnhideHandler handler)` in `GroupChannel`.
+* Added `getHiddenState()` in `GroupChannel`.
+* Added `enum HiddenState { UNHIDDEN, HIDDEN_ALLOW_AUTO_UNHIDE, HIDDEN_PREVENT_AUTO_UNHIDE }` in `GroupChannel`.
+   * `UNHIDDEN`: It's not hidden channel.
+   * `HIDDEN_ALLOW_AUTO_UNHIDE`: It's hidden channel which is automatically unhidden when new message comes in.
+   * `HIDDEN_PREVENT_AUTO_UNHIDE`: It's hidden channel which is not unhidden when new message comes in.
+* Added `setHiddenChannelFilter(HiddenChannelFilter hiddenChannelFilter)` in `GroupChannelListQuery`.
+* Added `enum HiddenChannelFilter { UNHIDDEN, HIDDEN, HIDDEN_ALLOW_AUTO_UNHIDE, HIDDEN_PREVENT_AUTO_UNHIDE }` in `GroupChannelListQuery`.
+   * `UNHIDDEN`: Get all unhidden channels. (default)
+   * `HIDDEN`: Get all hidden channels which `HiddenState` is `HIDDEN_ALLOW_AUTO_UNHIDE` or `HIDDEN_PREVENT_AUTO_UNHIDE`.
+   * `HIDDEN_ALLOW_AUTO_UNHIDE`: Get channels which `HiddenState` is `HIDDEN_ALLOW_AUTO_UNHIDE`.
+   * `HIDDEN_PREVENT_AUTO_UNHIDE`: Get channels which `HiddenState` is `HIDDEN_PREVENT_AUTO_UNHIDE`.
+* Added `getMessageChangeLogsByTimestamp(long ts, GetMessageChangeLogsHandler handler)` in `BaseChannel`.
+   * It retrieves message change logs since the given timestamp.
+
 ### v3.0.82 (Nov 15, 2018)
 * Changed type of getSender() in UserMessage and FileMessage from User to a new class Sender which extends User.
 * Sender has isBlockedByMe() which indicates that the message sender is blocked by the current user (default: false).
