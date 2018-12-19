@@ -22,6 +22,17 @@ dependencies {
 }
 ```
 
+### After Gradle 3.0
+```
+repositories {
+    maven { url "https://raw.githubusercontent.com/smilefam/SendBird-SDK-Android/master/" }
+}
+dependencies {
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.85'
+}
+
+```
+
 ## Android Permissions
 The `Android SDK` requires some permissions from your app's `AndroidManifest.xml` file. These permissions allow the `SDK` to communicate `SendBird` server and read or write file to external storage.
 You need below permissions.
