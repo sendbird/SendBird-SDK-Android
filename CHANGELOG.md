@@ -1,5 +1,24 @@
 ## Change Log
 
+### v3.0.86 (Jan 18, 2019)
+* Added `enum PushTriggerOption {ALL, OFF, MENTION_ONLY, DEFAULT}` in `GroupChannel`.
+  * `ALL` : It receives all push notifications.
+  * `OFF` : It doesn't receive any push notifications.
+  * `MENTION_ONLY` : It receives push notifications which mention me.
+  * `DEFAULT` : It receives push notifications according to the state of `PushTriggerOption` in `SendBird`.
+  * `PushTriggerOption` of `GroupChannel` has higher priority than `SendBird`'s. It depends on `SendBird`'s `PushTriggerOption` only when `GroupChannel`'s `PushTriggerOption` is `DEFAULT`.
+* Added `setMyPushTriggerOption(PushTriggerOption pushTriggerOption, GroupChannelSetMyPushTriggerOptionHandler handler)` in `GroupChannel`.
+* Added `getMyPushTriggerOption(GroupChannelGetMyPushTriggerOptionHandler handler)` in `GroupChannel`.
+* Added `enum PushTriggerOption {ALL, OFF, MENTION_ONLY}` in `SendBird`.
+  * `ALL` : It receives all push notifications.
+  * `OFF` : It doesn't receive any push notifications.
+  * `MENTION_ONLY` : It receives push notifications which mention me.
+* Added `setPushTriggerOption(PushTriggerOption pushTriggerOption, SetPushTriggerOptionHandler handler)` in `SendBird`.
+* Added `getPushTriggerOption(GetPushTriggerOptionHandler handler)` in `SendBird`.
+* Added `setSnoozePeriod(boolean snoozeOn, long startTs, long endTs, SetSnoozePeriodHandler handler)` in `SendBird`.
+  * It snooze or stop snooze push notification in specific duration.
+* Added `getSnoozePeriod(GetSnoozePeriodHandler handler)` in `SendBird`.
+
 ### v3.0.85 (Dec 14, 2018)
 * Fixed minor bugs.
 
