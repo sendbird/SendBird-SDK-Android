@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.87 (Jan 29, 2019)
+* Fixed minor bug.
+
 ### v3.0.86 (Jan 18, 2019)
 * Added `enum PushTriggerOption {ALL, OFF, MENTION_ONLY, DEFAULT}` in `GroupChannel`.
   * `ALL` : It receives all push notifications.
