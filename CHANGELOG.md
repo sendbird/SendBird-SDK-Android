@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.88 (Jan 31, 2019)
+* Added getter methods of `GroupChannelListQuery` and `PublicGroupChannelListQuery` properties.
+* Added overriding method `equals()` in `BaseMessage`, `AdminMessage`, `FileMessage`, `UserMessage`, `User`, `Sender` and `Member`.
+* Fixed minor bug.
+
 ### v3.0.87 (Jan 29, 2019)
 * Fixed minor bug.
 
