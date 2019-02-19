@@ -34,7 +34,7 @@ You need below permissions.
 ```
 
 ## SyncManager
-`SyncManager` is a support add-on for [SendBird SDK](https://github.com/smilefam/SendBird-SDK-Android). Major benefits of `SyncManager` are,  
+[SyncManager SDK](https://github.com/smilefam/sendbird-syncmanager-android) is a support add-on for [SendBird SDK](https://github.com/smilefam/SendBird-SDK-Android). Major benefits of `SyncManager` are,  
   
  * Local cache integrated: store channel/message data in local storage for fast view loading.  
  * Event-driven data handling: subscribe channel/message event like `insert`, `update`, `remove` at a single spot in order to apply data event to view.  
