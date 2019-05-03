@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.94 (May 3, 2019)
+* Added `isDiscoverable` property to `GroupChannel` and `GroupChannelParams`.
+  * if `isDiscoverable` of a public group channel is set to false, then the channel will not appear on the result of `PublicGroupChannelListQuery`.
+  
 ### v3.0.93 (Apr 26, 2019)
 * Improved stability.
 
