@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.95 (May 17, 2019)
+* Added `delete(GroupChannelDeleteHandler handler)` in `GroupChannel`.
+
 ### v3.0.94 (May 3, 2019)
 * Added `isDiscoverable` property to `GroupChannel` and `GroupChannelParams`.
   * if `isDiscoverable` of a public group channel is set to false, then the channel will not appear on the result of `PublicGroupChannelListQuery`.
