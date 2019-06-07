@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.96 (Jun 7, 2019)
+* Added `getRequestState()` and `enum RequestState { NONE, PENDING, FAILED, SUCCEEDED }` in UserMessage.
+* Added `resendUserMessage(UserMessage userMessage, ResendUserMessageHandler handler)` in BaseChannel.
+* Added `getMyLastRead()` in GroupChannel.
+* Added `createChannelWithOperatorUserIds(String name, String channelUrl, Object coverUrlOrImage, String data, String customType, List<String> operatorUserIds, OpenChannelCreateHandler handler)` in OpenChannel.
+
 ### v3.0.95 (May 17, 2019)
 * Added `delete(GroupChannelDeleteHandler handler)` in `GroupChannel`.
 
