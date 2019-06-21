@@ -3,7 +3,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.0.96-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.96)
+[![Maven](https://img.shields.io/badge/maven-v3.0.97-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.97)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Documentation
@@ -18,7 +18,7 @@ repositories {
     maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
 }
 dependencies {
-    compile 'com.sendbird.sdk:sendbird-android-sdk:3.0.96'
+    compile 'com.sendbird.sdk:sendbird-android-sdk:3.0.97'
 }
 ```
 

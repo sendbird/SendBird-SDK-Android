@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.97 (Jun 21, 2019)
+* Added `setHandlerForCallbacks(Handler handler)` in SendBird.Options.
+* Improved stability.
+
 ### v3.0.96 (Jun 7, 2019)
 * Added `getRequestState()` and `enum RequestState { NONE, PENDING, FAILED, SUCCEEDED }` in UserMessage.
 * Added `resendUserMessage(UserMessage userMessage, ResendUserMessageHandler handler)` in BaseChannel.
