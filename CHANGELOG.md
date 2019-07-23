@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.98 (Jul 23, 2019)
+* Added `setThreadOption(ThreadOption threadOption, Handler handler)` in SendBird.Option.
+* Deprecated `useUiThreadForCallbacks(boolean)` and `setHandlerForCallbacks(Handler handler)` in SendBird.Option.
+* Improved stability.
+
 ### v3.0.97 (Jun 21, 2019)
 * Added `setHandlerForCallbacks(Handler handler)` in SendBird.Options.
 * Improved stability.
