@@ -18,7 +18,7 @@ repositories {
     maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
 }
 dependencies {
-    compile 'com.sendbird.sdk:sendbird-android-sdk:3.0.98'
+    implement 'com.sendbird.sdk:sendbird-android-sdk:3.0.98'
 }
 ```
 
