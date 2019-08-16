@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sendbird.sdk</groupId>
+  <artifactId>sendbird-android-sdk</artifactId>
+  <version>3.0.99</version>
+  <name>SendBird Android SDK</name>
+  <description>SendBird is simplest solution for chat and messaging. It enables your app to engage and retain your users in real-time.</description>
+  <url>https://www.sendbird.com/</url>
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>SendBird SDK License</name>
+      <url>https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+</project>

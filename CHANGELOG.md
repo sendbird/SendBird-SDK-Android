@@ -1,5 +1,18 @@
 ## Change Log
 
+### v3.0.99 (Aug 16, 2019)
+* Improved `MetaArray` in `BaseMessage`. `MetaArray` order passed as a parameter will be kept.
+   * Added `MessageMetaArray` class.
+   * Added `getAllMetaArrays()` and `getMetaArrays(Collection<String> metaArrayKeys)` in `BaseMessage`.
+   * Added `addMessageMetaArrayValues(BaseMessage message, List<MessageMetaArray> metaArrays, MessageMetaArrayHandler handler)` and `removeMessageMetaArrayValues(BaseMessage message, List<MessageMetaArray> metaArrays, MessageMetaArrayHandler handler)` in `BaseChannel`.
+   * Deprecated `getAllMetaArray()` and `getMetaArray(Collection<String> metaArrayKeys)` in `BaseMessage`.
+   * Deprecated `addMessageMetaArrayValues(BaseMessage message, Map<String, List<String>> metaArrayMap, MessageMetaArrayHandler handler)` and `removeMessageMetaArrayValues(BaseMessage message, Map<String, List<String>> metaArrayMap, MessageMetaArrayHandler handler)` in `BaseChannel`. 
+* Added `resendFileMessage(FileMessage fileMessage, File file, ResendFileMessageHandler handler)` and `resendFileMessage(FileMessage fileMessage, File file, ResendFileMessageWithProgressHandler handler)` in `BaseChannel`.
+* Added `getRequestState()` and `enum RequestState { NONE, PENDING, FAILED, SUCCEEDED }` in `FileMessage`.
+* Added `setStrict(boolean strict)` in `GroupChannelParams`. If it is set to true, the channel creation will be failed if any of the users do not exist.
+* Added `translateUserMessage(UserMessage userMessage, List<String> targetLanguages, TranslateUserMessageHandler handler)` in `BaseChannel`.
+* Added `getRequestedMentionUserIds()` in `UserMessage` and `FileMessage`.
+
 ### v3.0.98 (Jul 23, 2019)
 * Added `setThreadOption(ThreadOption threadOption, Handler handler)` in SendBird.Option.
 * Deprecated `useUiThreadForCallbacks(boolean)` and `setHandlerForCallbacks(Handler handler)` in SendBird.Option.
