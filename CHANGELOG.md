@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.100 (Aug 23, 2019)
+* Improved stability.
+
 ### v3.0.99 (Aug 16, 2019)
 * Improved `MetaArray` in `BaseMessage`. `MetaArray` order passed as a parameter will be kept.
    * Added `MessageMetaArray` class.
