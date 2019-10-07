@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.105 (Oct 7, 2019)
+* Added `report(ReportCategory reportCategory, String reportDescription, ReportHandler handler)` in BaseChannel.
+* Added `reportUser(User offendingUser, ReportCategory reportCategory, String reportDescription, ReportUserHandler handler)` in BaseChannel.
+* Added `reportMessage(BaseMessage message, ReportCategory reportCategory, String reportDescription, ReportMessageHandler handler)` in BaseChannel.
+* Added `onTotalUnreadMessageCountChanged(int totalCount, Map<String, Integer> totalCountByCustomType)` in UserEventHandler.
+
 ### v3.0.104 (Sep 23, 2019)
 * Improved stability.
 
