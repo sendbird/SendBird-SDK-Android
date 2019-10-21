@@ -3,6 +3,7 @@
 ### v3.0.106 (Oct 18, 2019)
 * SendBird Android SDK has been changed from Java Archive(`JAR`) into Android Archive(`AAR`).
 * Supports TLS1.3.
+* Improved stability.
 
 ### v3.0.105 (Oct 7, 2019)
 * Added `report(ReportCategory reportCategory, String reportDescription, ReportHandler handler)` in BaseChannel.
