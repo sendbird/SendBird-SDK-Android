@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.107 (Nov 4, 2019)
+* Added `getMessageOffsetTimestamp()` in GroupChannel.
+
 ### v3.0.106 (Oct 18, 2019)
 * SendBird Android SDK has been changed from Java Archive(`JAR`) into Android Archive(`AAR`).
 * Supports TLS1.3.
