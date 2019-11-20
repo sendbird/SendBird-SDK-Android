@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.108 (Nov 20, 2019)
+* Supports push translation.
+    * Added `updateCurrentUserInfo(List<String> preferredLanguages, UserInfoUpdateHandler handler)` in SendBird.
+    * Added `getPreferredLanguages()` in User.
+* Improved stability.
+
 ### v3.0.107 (Nov 4, 2019)
 * Added `getMessageOffsetTimestamp()` in GroupChannel.
 
