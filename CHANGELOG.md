@@ -1,6 +1,6 @@
 ## Change Log
 
-### v3.0.108 (Nov 20, 2019)
+### v3.0.109 (Nov 29, 2019)
 * Supports push translation.
     * Added `updateCurrentUserInfo(List<String> preferredLanguages, UserInfoUpdateHandler handler)` in SendBird.
     * Added `getPreferredLanguages()` in User.
