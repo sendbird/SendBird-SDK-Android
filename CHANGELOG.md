@@ -1,4 +1,7 @@
 ## Change Log
+### v3.0.110 (Dec 4, 2019)
+* Added `errorCode` and `isResendable()` in `UserMessage` and `FileMessage`.
+    * `resendUserMessage()` and `resendFileMessage()` work only when `isResendable()` is `true`.
 
 ### v3.0.109 (Nov 29, 2019)
 * Supports push translation.
