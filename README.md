@@ -3,7 +3,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.0.110-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.110)
+[![Maven](https://img.shields.io/badge/maven-v3.0.111-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.111)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Documentation
@@ -18,18 +18,18 @@ repositories {
     maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
 }
 dependencies {
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.110'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.111'
 }
 ```
 
-TLS1.3 support is included in version 3.0.110 of the SendBird Android SDK.
+TLS1.3 support is included in version 3.0.111 of the SendBird Android SDK.
 TLS1.3 is enabled by default. To disable it, please include the following configuration to the gradle dependency:
 
 > Note: The SendBird Android SDK depends on the [Conscrypt](https://github.com/google/conscrypt) library in order to support TLS1.3
 
 ```
 dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.110') {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.111') {
         exclude group: 'org.conscrypt', module: 'conscrypt-android'
     }
 }

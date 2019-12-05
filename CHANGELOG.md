@@ -1,4 +1,8 @@
 ## Change Log
+
+### v3.0.111 (Dec 5, 2019)
+* Improved stability.
+
 ### v3.0.110 (Dec 4, 2019)
 * Added `errorCode` and `isResendable()` in `UserMessage` and `FileMessage`.
     * `resendUserMessage()` and `resendFileMessage()` work only when `isResendable()` is `true`.
