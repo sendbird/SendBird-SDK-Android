@@ -1,5 +1,21 @@
 ## Change Log
 
+### v3.0.112 (Dec 24, 2019)
+* Supports reactions in `BaseMessage`
+    * Added `Reaction` and `ReactionEvent` classes.
+    * Added `addReaction(BaseMessage message, String key, ReactionHandler handler)` in `BaseChannel`.
+    * Added `deleteReaction(BaseMessage message, String key, ReactionHandler handler)` in `BaseChannel`.
+    * Added `includeReactions` parameter to `get**MessagesById()`, `get**MessagesByTimestamp()` in `BaseChannel`.
+    * Added `includeReactions` parameter to `getMessageChangeLogsByToken()`, `getMessageChangeLogsByTimestamp()` in `BaseChannel`.
+    * Added `onReactionUpdated(BaseChannel channel, ReactionEvent reactionEvent)` in `ChannelHandler`.
+    * Added `getReactions()` in `BaseMessage`. 
+    * Added `applyReactionEvent(ReactionEvent reactionEvent)` in `BaseMessage`.
+    * Added a `ERR_REACTION_DUPLICATED` error code for the send reaction request which usually occurs a duplicate reaction.
+* Added `markAsDelivered()` in `SendBird`.
+* Added `markAsDelivered()`, `getDeliveryReceipt()` in `GroupChannel`.
+* Added `onDeliveryReceiptUpdated` in `ChannelHandler`.
+* Improved stability.
+
 ### v3.0.111 (Dec 5, 2019)
 * Improved stability.
 
@@ -42,7 +58,7 @@
 ### v3.0.100 (Aug 23, 2019)
 * Improved stability.
 
-### v3.0.99 (Aug 16, 2019)
+### v3.0.99 (Aug 16, 2019)z
 * Improved `MetaArray` in `BaseMessage`. `MetaArray` order passed as a parameter will be kept.
    * Added `MessageMetaArray` class.
    * Added `getAllMetaArrays()` and `getMetaArrays(Collection<String> metaArrayKeys)` in `BaseMessage`.
