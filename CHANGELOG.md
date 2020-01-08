@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.115 (Jan 08, 2020)
+* Improved stability.
+
 ### v3.0.114 (Jan 07, 2020)
 * Fixed minor bugs.
 
