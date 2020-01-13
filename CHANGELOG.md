@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.116 (Jan 13, 2020)
+* Supports Full-Text Message Search Feature
+    * Added `MessageSearchQuery` to search messages.
+    * Added builder class `MessageSearchQuery.Builder` to build `MessageSearchQuery`.
+
 ### v3.0.115 (Jan 08, 2020)
 * Improved stability.
 
