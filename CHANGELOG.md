@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.117 (Jan 15, 2020)
+* Improved stability.
+
 ### v3.0.116 (Jan 13, 2020)
 * Supports Full-Text Message Search Feature
     * Added `MessageSearchQuery` to search messages.
