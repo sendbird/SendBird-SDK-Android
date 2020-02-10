@@ -1,5 +1,12 @@
 ## Change Log
 
+### v3.0.118 (Feb 10, 2020)
+* Moved `getRequestId()`, `getMessage()`, `getSender()` to `BaseMessage` to prevent type-casting.
+* Redefined `equals()`, `hashCode()` methods. Following objects is affected by this.
+    * `BaseMessage`, `UserMessage`, `FileMessage`, `AdminMessage`
+    * `User`, `Memeber`, `Sender`
+* Improved stability.
+
 ### v3.0.117 (Jan 15, 2020)
 * Improved stability.
 
