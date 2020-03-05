@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.119 (Mar 05, 2020)
+* `resendUserMessage()`, `resendFileMessage()` returns the corresponding messages with `PENDING` state.
+* Improved stability.
+
 ### v3.0.118 (Feb 10, 2020)
 * Moved `getRequestId()`, `getMessage()`, `getSender()` to `BaseMessage` to prevent type-casting.
 * Redefined `equals()`, `hashCode()` methods. Following objects is affected by this.
