@@ -26,7 +26,7 @@ TLS1.3 is enabled by default. To disable it, please include the following config
 
 ```
 dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.118') {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.119') {
         exclude group: 'org.conscrypt', module: 'conscrypt-android'
     }
 }
