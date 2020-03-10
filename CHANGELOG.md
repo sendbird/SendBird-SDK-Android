@@ -1,6 +1,7 @@
 ## Change Log
 
-### v3.0.120 (Mar 10, 2020)
+### v3.0.121 (Mar 10, 2020)
+* Deprecated 3.0.119 as `BaseChannel.resendUserMessage` causes crash when used with SyncManager's autoResend feature.
 * Added version control over the final state of `reactions`.
 * Changed the order of reactions.
 * **Removed** a `ERR_REACTION_DUPLICATED` error code
@@ -8,7 +9,7 @@
     * `NONE`, `PENDING`, `FAILED`, `SUCCEEDED`, `CANCELED`.
 * Improved stability.
 
-### v3.0.119 (Mar 05, 2020)
+### <strike>v3.0.119 (Mar 05, 2020)</strike> *DEPRECATED*
 * `resendUserMessage()`, `resendFileMessage()` returns the corresponding messages with `PENDING` state.
 * Improved stability.
 
