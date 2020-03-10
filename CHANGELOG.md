@@ -1,5 +1,13 @@
 ## Change Log
 
+### v3.0.120 (Mar 10, 2020)
+* Added version control over the final state of `reactions`.
+* Changed the order of reactions.
+* **Removed** a `ERR_REACTION_DUPLICATED` error code
+* Added `SendingStatus` in `BaseMessage`, and deprecated `RequestState` in `UserMessage`, `FileMessage`.
+    * `NONE`, `PENDING`, `FAILED`, `SUCCEEDED`, `CANCELED`.
+* Improved stability.
+
 ### v3.0.119 (Mar 05, 2020)
 * `resendUserMessage()`, `resendFileMessage()` returns the corresponding messages with `PENDING` state.
 * Improved stability.
