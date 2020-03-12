@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.122 (Mar 12, 2020)
+* Added multi-device support for push notifications.
+* Improved stability.
+
 ### v3.0.121 (Mar 10, 2020)
 * Deprecated 3.0.119 as `BaseChannel.resendUserMessage` causes crash when used with SyncManager's autoResend feature.
 * Added version control over the final state of `reactions`.
