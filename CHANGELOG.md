@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.123 (Mar 13, 2020)
+* Improved stability.
+
 ### v3.0.122 (Mar 12, 2020)
 * Added multi-device support for push notifications.
 * Improved stability.
