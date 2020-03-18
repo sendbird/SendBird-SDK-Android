@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.124 (Mar 18, 2020)
+* Added `getRole()` in `Member` to specify whether the member is an operator of the channel or not.
+* Added `onOperatorUpdated(BaseChannel channel)` in `ChannelHandler`.
+* `OpenChannel.getOperators` now returns the operator list as an **unmodifiableList**.
+* Improved stability.
+
 ### v3.0.123 (Mar 13, 2020)
 * Improved stability.
 
