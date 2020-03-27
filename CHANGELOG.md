@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.125 (Mar 27, 2020)
+* Improved stability.
+
 ### v3.0.124 (Mar 18, 2020)
 * Added `getRole()` in `Member` to specify whether the member is an operator of the channel or not.
 * Added `onOperatorUpdated(BaseChannel channel)` in `ChannelHandler`.
