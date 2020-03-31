@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.126 (Mar 31, 2020)
+* Stabilize connection state.
+* Improved stability.
+
 ### v3.0.125 (Mar 27, 2020)
 * Improved stability.
 
