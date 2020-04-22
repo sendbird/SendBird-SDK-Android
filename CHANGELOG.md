@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.128 (Apr 22, 2020)
+* Prevent crash issue on receiving custom push notification.
+* Improved stability.
+
 ### v3.0.127 (Apr 21, 2020)
 * Improved stability.
 
