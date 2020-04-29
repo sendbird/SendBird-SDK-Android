@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.129 (Apr 29, 2020)
+* Added `setMetaArrays(List<MessageMetaArray>)` in `UserMessageParams` and `FileMessageParams`.
+* Deprecated `setMetaArrayKeys(List<String>)` in `UserMessageParams` and `FileMessageParams`.
+* Improved stability.
+
 ### v3.0.128 (Apr 22, 2020)
 * Prevent crash issue on receiving custom push notification.
 * Improved stability.
