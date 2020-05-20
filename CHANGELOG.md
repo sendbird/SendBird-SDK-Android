@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.130 (May 20, 2020)
+* Added `AppInfo` class (for UIKit)
+* Added emoji feature with `Emoji`, `EmojiCategory`, `EmojiContainer` class (for UIKit)
+* Improved stability.
+
 ### v3.0.129 (Apr 29, 2020)
 * Added `setMetaArrays(List<MessageMetaArray>)` in `UserMessageParams` and `FileMessageParams`.
 * Deprecated `setMetaArrayKeys(List<String>)` in `UserMessageParams` and `FileMessageParams`.
