@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.131 (May 27, 2020)
+* Added `includeFrozen` property in `GroupChannelListQuery`, `PublicGroupChannelListQuery`, `OpenChannelListQuery` and `GroupChannelChangeLogsParams`.
+* Added `GroupChannelChangeLogsParams`.
+* Added `getMyGroupChannelChangeLogsByTokenWithParams()`, `getMyGroupChannelChangeLogsByTimestampWithParams()` and deprecated `getMyGroupChannelChangeLogsByToken()`, `getMyGroupChannelChangeLogsByTimestamp()`
+
 ### v3.0.130 (May 20, 2020)
 * Added `AppInfo` class (for UIKit)
 * Added emoji feature with `Emoji`, `EmojiCategory`, `EmojiContainer` class (for UIKit)
