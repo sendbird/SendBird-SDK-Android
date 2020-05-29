@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.132 (May 29, 2020)
+* Fixed bugs on push notification not being received when app is killed. (Only for apps that use push notifications for multi-device users (Android only))
+
 ### v3.0.131 (May 27, 2020)
 * Added `includeFrozen` property in `GroupChannelListQuery`, `PublicGroupChannelListQuery`, `OpenChannelListQuery` and `GroupChannelChangeLogsParams`.
 * Added `GroupChannelChangeLogsParams`.
