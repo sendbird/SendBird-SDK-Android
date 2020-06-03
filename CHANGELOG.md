@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.133 (Jun 3, 2020)
+* Improved stability.
+
 ### v3.0.132 (May 29, 2020)
 * Fixed bugs on push notification not being received when app is killed. (Only for apps that use push notifications for multi-device users (Android only))
 
