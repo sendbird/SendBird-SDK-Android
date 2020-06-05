@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.134 (Jun 5, 2020)
+* Add consumerProguardFile for libraries used in SDK
+
 ### v3.0.133 (Jun 3, 2020)
 * Improved stability.
 
