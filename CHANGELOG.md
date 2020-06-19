@@ -1,5 +1,12 @@
 ## Change Log
 
+### v3.0.136 (Jun 19, 2020)
+* Added `from()` method in `GroupChannelChangeLogsParams` to create `GroupChannelChangeLogsParams` from `GroupChannelListQuery`.
+* Added `from()` method in `MessageChangeLogsParams` to create `MessageChangeLogsParams` from `PreviousMessageListQuery`, `MessageListParams` and `ThreadMessageListParams`.
+* Added `getUnreadMemberCount` and `getUndeliveredMemberCount` in `GroupChannel`.
+* Deprecated `getDeliveryReceipt` and `getReadReceipt` in `GroupChannel`.
+* Improved stability.
+
 ### v3.0.135 (Jun 12, 2020)
 * Improved stability.
 
