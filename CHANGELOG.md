@@ -1,6 +1,12 @@
 ## Change Log
 
+### v3.0.137 (Jul 8, 2020)
+
+* Added `addOperators(Collection<String>, AddOperatorsHandler)`, `removeOperators(Collection<String>, RemoveOperatorsHandler)`, `removeAllOperators(RemoveAllOperatorsHandler)` methods in `BaseChannel`.
+* Improved stability.
+
 ### v3.0.136 (Jun 19, 2020)
+
 * Added `from()` method in `GroupChannelChangeLogsParams` to create `GroupChannelChangeLogsParams` from `GroupChannelListQuery`.
 * Added `from()` method in `MessageChangeLogsParams` to create `MessageChangeLogsParams` from `PreviousMessageListQuery`, `MessageListParams` and `ThreadMessageListParams`.
 * Added `getUnreadMemberCount` and `getUndeliveredMemberCount` in `GroupChannel`.
