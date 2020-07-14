@@ -1,12 +1,14 @@
 ## Change Log
 
-### v3.0.137 (Jul 8, 2020)
+### v3.0.138 (Jul 14, 2020)
+* Fixed bug on userId not being set in certain cases for pending/failed messages.
+* Improved stability.
 
+### v3.0.137 (Jul 8, 2020)
 * Added `addOperators(Collection<String>, AddOperatorsHandler)`, `removeOperators(Collection<String>, RemoveOperatorsHandler)`, `removeAllOperators(RemoveAllOperatorsHandler)` methods in `BaseChannel`.
 * Improved stability.
 
 ### v3.0.136 (Jun 19, 2020)
-
 * Added `from()` method in `GroupChannelChangeLogsParams` to create `GroupChannelChangeLogsParams` from `GroupChannelListQuery`.
 * Added `from()` method in `MessageChangeLogsParams` to create `MessageChangeLogsParams` from `PreviousMessageListQuery`, `MessageListParams` and `ThreadMessageListParams`.
 * Added `getUnreadMemberCount` and `getUndeliveredMemberCount` in `GroupChannel`.
