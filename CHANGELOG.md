@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.139 (Jul 22, 2020)
+* Added open graph feature along with OGMetaData and OGImage class.
+* Added ogMetaData property in BaseMessage.
+* Improved stability.
+
 ### v3.0.138 (Jul 14, 2020)
 * Fixed bug on userId not being set in certain cases for pending/failed messages.
 * Improved stability.
