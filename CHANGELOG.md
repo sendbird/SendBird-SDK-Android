@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.140 (Aug 14, 2020)
+* Added - `GroupChannelMemberListQuery#Order`, `GroupChannelMemberListQuery#setOrder` for the member list query.
+* Added - `isMuted` property in `Member` class
+* Added - `getAttributesInUse` in `AppInfo` class
+* Modified TLS 1.3 support implementation to support dynamic delivery. (removed `SendBirdInitProvider`)
+
 ### v3.0.139 (Jul 22, 2020)
 * Added open graph feature along with OGMetaData and OGImage class.
 * Added ogMetaData property in BaseMessage.
