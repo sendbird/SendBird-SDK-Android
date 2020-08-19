@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.141 (Aug 19, 2020)
+* Activated - `OperatorFilter` in `GroupChannelMemberListQuery`
+* Added `setWebSocketResponseTimeout()` in `SendBird.Options` to manually set timeout value.
+
 ### v3.0.140 (Aug 14, 2020)
 * Added - `GroupChannelMemberListQuery#Order`, `GroupChannelMemberListQuery#setOrder` for the member list query.
 * Added - `isMuted` property in `Member` class
