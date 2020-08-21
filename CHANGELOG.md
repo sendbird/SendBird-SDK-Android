@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.142 (Aug 21, 2020)
+* Added `getCreator()` in `GroupChannel` to retrieve the creator of the channel.
+* Improved stability.
+
 ### v3.0.141 (Aug 19, 2020)
 * Activated - `OperatorFilter` in `GroupChannelMemberListQuery`
 * Added `setWebSocketResponseTimeout()` in `SendBird.Options` to manually set timeout value.
