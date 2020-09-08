@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.144 (Sep 08, 2020)
+* Improved stability.
+
 ### v3.0.143 (Aug 31, 2020)
 * Stabilize socket connection
 

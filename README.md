@@ -3,7 +3,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.0.142-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.143)
+[![Maven](https://img.shields.io/badge/maven-v3.0.144-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.144)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Documentation
@@ -15,7 +15,7 @@ repositories {
     maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
 }
 dependencies {
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.143'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.144'
 }
 ```
 
@@ -26,7 +26,7 @@ TLS1.3 is enabled by default. To disable it, please include the following config
 
 ```
 dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.143') {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.144') {
         exclude group: 'org.conscrypt', module: 'conscrypt-android'
     }
 }
@@ -38,7 +38,7 @@ You need below permissions.
 
 #### AndroidManifest.xml
 ```
-<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.INTERNET" />quick_start.md
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
