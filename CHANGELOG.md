@@ -1,7 +1,12 @@
 ## Change Log
 
+### v3.0.147 (Sep 29, 2020)
+
+* Modified `BaseMessage#buildFromSerializedData(byte[], SendingStatus)`
+
 ### v3.0.146 (Sep 25, 2020)
-* Added `BaseMessage#`buildFromSerializedData(byte[], SendingStatus)
+
+* Added `BaseMessage#buildFromSerializedData(byte[], SendingStatus)`
 
 ### v3.0.145 (Sep 15, 2020)
 * Added `GroupChannel.getTypingUsers()` in `GroupChannel` to retrieve the typing user list in current channel.
