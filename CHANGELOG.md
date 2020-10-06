@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.148 (Oct 6, 2020)
+
+* `GroupChannelListQuery#getCustomTypesFilter` now returns a copy of the filter list instead of directly returning the reference.
+* Improved stability.
+
 ### v3.0.147 (Sep 29, 2020)
 
 * Modified `BaseMessage#buildFromSerializedData(byte[], SendingStatus)`
