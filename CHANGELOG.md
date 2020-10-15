@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.149 (Oct 15, 2020)
+
+* Added `MessageListParams#setShowSubchannelMessagesOnly` and `MessageListParams#shouldShowSubchannelMessagesOnly`.
+* Added `PreviousMessageListQuery#setShowSubchannelMessagesOnly` and `PreviousMessageListQuery#shouldShowSubchannelMessagesOnly`
+
 ### v3.0.148 (Oct 6, 2020)
 
 * `GroupChannelListQuery#getCustomTypesFilter` now returns a copy of the filter list instead of directly returning the reference.
