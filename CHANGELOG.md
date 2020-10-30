@@ -1,5 +1,13 @@
 ## Change Log
 
+### v3.0.150 (Oct 30, 2020)
+* Added `createChannel()` with `OpenChannelParams` in `OpenChannel`.
+* Added `updateChannel()` with `OpenChannelParams` in `OpenChannel`.
+* Added `OpenChannelParams`.
+* Changes in `BaseChannel.sendFileMessage()`.
+   * When sending a file message with a **`File`** object, SDK will calculate the file size internally. (`fileSize` parameter will be **overridden by our calculation result**).
+* Improved stability.
+
 ### v3.0.149 (Oct 15, 2020)
 
 * Added `MessageListParams#setShowSubchannelMessagesOnly` and `MessageListParams#shouldShowSubchannelMessagesOnly`.
