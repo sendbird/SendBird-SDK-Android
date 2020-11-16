@@ -78,7 +78,6 @@ If you’re familiar with using external libraries or SDKs, installing the Chat 
 
 ```gradle
 // build.gradle
-
 repositories {
     maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
 }
@@ -91,8 +90,37 @@ dependencies {
 
 3. The last method is downloading the Chat SDK through [JCenter](https://mvnrepository.com/repos/jcenter) Maven repository. Check your code to see if the `jcenter()` is added in the `build.gradle` file.
 
+#### TLS 1.3
 
+TLS 1.3 support is included in version 3.0.106 of the SendBird Android SDK. TLS 1.3 is enabled by default. To disable it, please include the following configuration to the gradle dependency:
 
+> Note: The SendBird Android SDK depends on the [Conscrypt](https://github.com/google/conscrypt) library in order to support TLS 1.3
+
+```gradle
+dependencies {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.145') {
+        exclude group: 'org.conscrypt', module: 'conscrypt-android'
+    }
+}
+```
+
+### Step 3: Grant system permissions to the Chat SDK
+
+The Chat SDK requires system permissions, which allow for communication with Sendbird server and the reading and writing on a user device’s storage To grant system permissions, add the following lines to your `AndroidManifest.xml` file.
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+```
+
+### (Optional) Step 4: Configure ProGuard to shrink code and resources
+
+When you build your APK with `minifyEnabled true`, add the following line to the module's `ProGuard` rules file.
+
+```txt
+-dontwarn com.sendbird.android.shadow.**
+```
 
 ## Documentation
 https://docs.sendbird.com/
