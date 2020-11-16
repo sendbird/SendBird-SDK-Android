@@ -12,6 +12,8 @@
   1. [Getting started](#getting-started)
   1. [Send your first message](#send-your-first-message)
 
+<br />
+
 ## Introduction
 
 Through the Chat SDK for Android, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This **read.me** provides the Chat SDK’s structure, supplementary features, and the installation steps. 
@@ -44,6 +46,18 @@ Your application provides two add-ons, which are detailed as follows.
 
 - [Sendbird SyncManager for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): the Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
 
+<br />
+
+## Getting started
+
+### Try the sample app
+
+The fastest way to test the Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository. The link is down below. 
+
+<a class="button button--large" href="https://github.com/sendbird/Sendbird-Android" target="_blank">Download sample app</a>
+
+
+https://github.com/sendbird/Sendbird-Android
 
 
 ## Documentation
