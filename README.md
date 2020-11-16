@@ -56,7 +56,7 @@ The fastest way to test the Chat SDK is to build your chat app on top of our sam
 
 - https://github.com/sendbird/Sendbird-Android
 
-Make sure to input your application ID into the sample app. Go to the [Create a Sendbird application from your dashboard](https://sendbird.com/docs/chat/v3/ios/getting-started/install-chat-sdk#2-step-1-create-a-sendbird-application-from-your-dashboard) section to learn more.
+> Note: Make sure to input your application ID into the sample app. Go to the [Create a Sendbird application from your dashboard](https://sendbird.com/docs/chat/v3/ios/getting-started/install-chat-sdk#2-step-1-create-a-sendbird-application-from-your-dashboard) section to learn more.
 
 
 ## Documentation
