@@ -1,10 +1,52 @@
-# [SendBird](https://sendbird.com) - Messaging and Chat API for Mobile Apps and Websites
-[SendBird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
+# [Sendbird](https://sendbird.com) Chat SDK for Android
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Maven](https://img.shields.io/badge/maven-v3.0.150-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.150)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
+
+## Table of contents
+
+  1. [Introduction](#introduction)
+  1. [Before getting started](#before-getting-started)
+  1. [Getting started](#getting-started)
+  1. [Send your first message](#send-your-first-message)
+
+<br />
+
+## Introduction
+
+Through the Chat SDK for Android, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This **read.me** provides the Chat SDK’s structure, supplementary features, and the installation steps. 
+
+### How it works 
+
+It is simple to implement chat in your client app with the Chat SDK: a user logs in, sees a list of channels, selects or creates an [open channel](https://sendbird.com/docs/chat/v3/android/guides/open-channel#2-create-a-channel) or a [group channel](https://sendbird.com/docs/chat/v3/android/guides/group-channel#2-create-a-channel), and, through the use of the [channel event handlers](https://sendbird.com/docs/chat/v3/android/guides/event-handler), sends messages to the channel, while also receiving them from other users within the channel. 
+
+### For further reference
+
+Please visit the following link to learn more about Chat SDK for Android: https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk
+
+<br />
+
+## Before getting started
+
+### Requirements
+
+The minimum requirements for the Chat SDKfor Android are: 
+
+- Android 4.0 (API level 14) or higher
+- Java 7 or higher
+- Gradle 3.4.0 or higher
+
+### More about additional features of Sendbird Chat SDK
+
+Your application provides two add-ons, which are detailed as follows. 
+
+- [Sendbird UIKit for Android](https://sendbird.com/docs/uikit/v1/ios/getting-started/about-uikit): a development kit with a user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
+
+- [Sendbird SyncManager for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): the Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
+
+
 
 ## Documentation
 https://docs.sendbird.com/
