@@ -24,7 +24,7 @@ It is simple to implement chat in your client app with the Chat SDK: a user logs
 
 ### For further reference
 
-Please visit the following link to learn more about Chat SDK for Android: https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk
+Find out more about Sendbird Chat for iOS on [Chat SDK for Android doc](https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk).
 
 <br />
 
@@ -55,6 +55,8 @@ Your application provides two add-ons, which are detailed as follows.
 The fastest way to test the Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository. The link is down below. 
 
 - https://github.com/sendbird/Sendbird-Android
+
+Make sure to input your application ID into the sample app. Go to the [Create a Sendbird application from your dashboard](https://sendbird.com/docs/chat/v3/ios/getting-started/install-chat-sdk#2-step-1-create-a-sendbird-application-from-your-dashboard) section to learn more.
 
 
 ## Documentation
