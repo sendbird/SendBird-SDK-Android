@@ -58,6 +58,43 @@ The fastest way to test the Chat SDK is to build your chat app on top of our sam
 
 > Note: Make sure to input your application ID into the sample app. Go to the [Create a Sendbird application from your dashboard](https://sendbird.com/docs/chat/v3/ios/getting-started/install-chat-sdk#2-step-1-create-a-sendbird-application-from-your-dashboard) section to learn more.
 
+### Step 1: Create a Sendbird application from your dashboard
+
+A Sendbird application comprises everything required in a chat service including users, message, and channels. To create an application:
+
+1. Go to the [Sendbird Dashboard](https://dashboard.sendbird.com/auth/signup) and enter your email and password, and create a new account. You can also sign up with a Google account.
+2. When prompted by the setup wizard, enter your organization information to manage Sendbird applications.
+3. Lastly, when your dashboard home appears after completing setup, click **Create +** at the top-right corner.
+
+Regardless of the platform, only one Sendbird application can be integrated per app; however, the application supports communication across all Sendbird’s provided platforms without any additional setup. Sendbird supports iOS, Android, Javascript, Unity, .NET and API platforms. 
+
+> Note: All the data is limited to the scope of a single application, thus users in different Sendbird applications are unable to chat with each other. 
+
+### Step 2: Install the Chat SDK
+
+If you’re familiar with using external libraries or SDKs, installing the Chat SDK is simple. Sendbird provides three installation methods for the Chat SDK for Android, which are listed in order of preference as follows. 
+
+1. The best way to install the Chat SDK is by adding the `build.gradle` file at app level, not project level.
+
+```gradle
+// build.gradle
+
+repositories {
+    maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
+}
+dependencies {
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.145'
+}
+```
+
+2. The second would be to download the `.aar` file from the link below. Copy this file into your **libs/** folder, and make sure you include the library in your `build.gradle` file as well.
+
+Download Latest SDK
+
+3. The last method is downloading the Chat SDK through [JCenter](https://mvnrepository.com/repos/jcenter) Maven repository. Check your code to see if the `jcenter()` is added in the `build.gradle` file.
+
+
+
 
 ## Documentation
 https://docs.sendbird.com/
