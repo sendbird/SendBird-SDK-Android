@@ -54,10 +54,7 @@ Your application provides two add-ons, which are detailed as follows.
 
 The fastest way to test the Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository. The link is down below. 
 
-<a class="button button--large" href="https://github.com/sendbird/Sendbird-Android" target="_blank">Download sample app</a>
-
-
-https://github.com/sendbird/Sendbird-Android
+- https://github.com/sendbird/Sendbird-Android
 
 
 ## Documentation
