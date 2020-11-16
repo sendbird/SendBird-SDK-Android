@@ -90,7 +90,7 @@ dependencies {
 
 3. The last method is downloading the Chat SDK through [JCenter](https://mvnrepository.com/repos/jcenter) Maven repository. Check your code to see if the `jcenter()` is added in the `build.gradle` file.
 
-#### TLS 1.3
+#### - TLS 1.3
 
 TLS 1.3 support is included in version 3.0.106 of the SendBird Android SDK. TLS 1.3 is enabled by default. To disable it, please include the following configuration to the gradle dependency:
 
@@ -187,7 +187,7 @@ SendBird.connect(USER_ID, ACCESS_TOKEN, new SendBird.ConnectHandler() {
 
 For security reasons, you can also use a session token when a user logs in to Sendbird server instead of an access token. Go to the [Access token vs. Session token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user-3-access-token-vs-session-token) section from the [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api) guide to learn more.
 
-#### Tips for user account security
+#### - Tips for user account security
 
 From **Settings** > **Application** > **Security** > **Access token permission** setting in your dashboard, you can prevent users without an access token from logging in to your Sendbird application or restrict their access to **read** and **write** messages.
 
