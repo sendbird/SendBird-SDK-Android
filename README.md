@@ -89,8 +89,6 @@ dependencies {
 
 2. The second would be to download the `.aar` file from the link below. Copy this file into your **libs/** folder, and make sure you include the library in your `build.gradle` file as well.
 
-Download Latest SDK
-
 3. The last method is downloading the Chat SDK through [JCenter](https://mvnrepository.com/repos/jcenter) Maven repository. Check your code to see if the `jcenter()` is added in the `build.gradle` file.
 
 
