@@ -122,48 +122,129 @@ When you build your APK with `minifyEnabled true`, add the following line to the
 -dontwarn com.sendbird.android.shadow.**
 ```
 
-## Documentation
-https://docs.sendbird.com/
-Add below in your build.gradle file at app level (not project level).
+<br />
 
+## Send your first message
+
+### Authentication
+
+To use the features of the Chat SDK in your client app, a `Sendbird` instance must be initiated in each client app before user authentication with Sendbird server. These instances communicate and interact with the server based on an authenticated user account, allowing for the client app to use the Chat SDK features. 
+
+### Step 1: Initialize the Chat SDK
+
+You need to initialize a Sendbird instance before authentication. Initialization binds the Chat SDK to Android’s context, which allows the Chat SDK to respond to connection and state changes and also enables client apps to use the Chat SDK features. 
+
+To initialize the “Sendbird” instance, pass the “App_ID” of your Sendbird application in the dashboard as an argument to a parameter in the “SendBird.init()” method. As the “SendBird. init()” can only be a single instance, call it only a single time across your Android client app. Typically, initialization is implemented in the user login screen.
+
+> Note: It is recommended to initialize the Chat SDK in the `onCreate()` method of the [`Application`](https://developer.android.com/reference/android/app/Application) instance. 
+
+```java
+SendBird.init(APP_ID, Context context);
 ```
-repositories {
-    maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
-}
-dependencies {
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.150'
-}
-```
 
-TLS1.3 support is included in version 3.0.106 of the SendBird Android SDK.
-TLS1.3 is enabled by default. To disable it, please include the following configuration to the gradle dependency:
+### Step 2: Connect to Sendbird server
 
-> Note: The SendBird Android SDK depends on the [Conscrypt](https://github.com/google/conscrypt) library in order to support TLS1.3
+After initialization by use of the `init()` method, your client app must always be connected to Sendbird server before calling any methods. If you attempt to call a method without connecting, an `ERR_CONNECTION_REQUIRED (800101)` error would return.
 
-```
-dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.150') {
-        exclude group: 'org.conscrypt', module: 'conscrypt-android'
+Connect a user to Sendbird server either through a unique user ID or in combination with an access token. Sendbird prefers the latter method, as it ensures privacy with the user. The former is useful during the developmental phase or if your service doesn't require additional security.
+
+#### A. User ID
+
+Connect a user to Sendbird server using their unique **user ID**. By default, Sendbird server can authenticate a user by a unique user ID. Upon request for a connection, the server queries the database to check for a match. Any untaken user ID is automatically registered as a new user to the Sendbird system, while an existing ID is allowed to log indirectly. The ID must be unique within a Sendbird application, such as a hashed email address or phone number in your service.
+
+> Note: Go to the [Event handler](https://sendbird.com/docs/chat/v3/android/guides/event-handler) page to learn more about the usages of the Chat SDK's handlers and callbacks.
+
+```java
+SendBird.connect(USER_ID, new SendBird.ConnectHandler() {
+    @Override
+    public void onConnected(User user, SendBirdException e) {
+        if (e != null) {    // Error.
+            return;
+        }
     }
-}
+});
 ```
 
-## Android Permissions
-The `Android SDK` requires some permissions from your app's `AndroidManifest.xml` file. These permissions allow the `SDK` to communicate `SendBird` server and read or write file to external storage.
-You need below permissions.
+#### B. A combination of user ID and access token ID 
 
-#### AndroidManifest.xml
+Sendbird prefers that you pass the APP ID through the use of a token, as it ensures privacy for the users. [Create a user](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user) along with their access token, or [issue an access token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user) for an existing user. Once an access token is issued, a user is required to provide the access token in the `SendBird.connect()` method which is used for logging in.
+
+1. Using the Chat Platform API, create a Sendbird user account with the information submitted when a user signs up your service.
+2. Save the user ID along with the issued access token to your persistent storage which is securely managed.
+3. When the user attempts to log in to the Sendbird application, load the user ID and access token from the storage, and then pass them to the `SendBird.connect()` method.
+4. Periodically replacing the user's access token is recommended to protect the account.
+
+```java
+SendBird.connect(USER_ID, ACCESS_TOKEN, new SendBird.ConnectHandler() {
+    @Override
+    public void onConnected(User user, SendBirdException e) {
+        if (e != null) {    // Error.
+            return;
+        }
+    }
+});
 ```
-<uses-permission android:name="android.permission.INTERNET" />quick_start.md
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+For security reasons, you can also use a session token when a user logs in to Sendbird server instead of an access token. Go to the [Access token vs. Session token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user-3-access-token-vs-session-token) section from the [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api) guide to learn more.
+
+#### Tips for user account security
+
+From **Settings** > **Application** > **Security** > **Access token permission** setting in your dashboard, you can prevent users without an access token from logging in to your Sendbird application or restrict their access to **read** and **write** messages.
+
+### Step 3: Create a new open channel
+
+Create an [open channel](https://sendbird.com/docs/chat/v3/android/guides/open-channel#2-create-a-channel). Once created, all users in your Sendbird application can easily participate in the channel. Similarly, you can create a [group channel](https://sendbird.com/docs/chat/v3/android/guides/group-channel#2-create-a-channel) by inviting users as new members to the channel.
+
+> Note: All the methods in the following steps are asynchronous, excluding the `Sendbird.init()`. As a result, your client app must receive success callbacks from Sendbird server to proceed to the next step. 
+
+Sendbird recommends using the nesting of methods for callbacks: [Go to Step 4: Enter the channel]() to learn more about how you can nest the `openChannel.enter()` in the `OpenChannel.getChannel()` method.
+
+```java
+OpenChannel.createChannel(new OpenChannel.OpenChannelCreateHandler() {
+    @Override
+    public void onResult(OpenChannel openChannel, SendBirdException e) {
+        if (e != null) {    // Error.
+            return;
+        }
+    }
+});
 ```
 
-## SyncManager
-[SyncManager SDK](https://github.com/sendbird/sendbird-syncmanager-android) is a support add-on for [SendBird SDK](https://github.com/sendbird/SendBird-SDK-Android). Major benefits of `SyncManager` are,  
+### Step 4: Enter the channel
 
- * Local cache integrated: store channel/message data in local storage for fast view loading.  
- * Event-driven data handling: subscribe channel/message event like `insert`, `update`, `remove` at a single spot in order to apply data event to view.  
+Enter the channel to send and receive messages.
 
-Check out [Android Sample with SyncManager](https://github.com/sendbird/SendBird-Android/tree/master/syncmanager) which is same as [Android Sample](https://github.com/sendbird/SendBird-Android/tree/master/basic) with `SyncManager` integrated.    
-For more information about `SyncManager`, please refer to [SyncManager README](https://github.com/sendbird/sendbird-syncmanager-android/blob/master/README.md). 
+```java
+OpenChannel.getChannel(CHANNEL_URL, new OpenChannel.OpenChannelGetHandler() {
+    @Override
+    public void onResult(OpenChannel openChannel, SendBirdException e) {
+        if (e != null) {    // Error.
+            return;
+        }
+        
+        openChannel.enter(new OpenChannel.OpenChannelEnterHandler() {
+            @Override
+            public void onResult(SendBirdException e) {
+                if (e != null) {    // Error.
+                    return;
+                }
+            }
+        });
+    }
+});
+```
+
+### Step 5: Send a message to the channel
+
+Finally, send a message to the channel. There are [three types](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#-3-resource-representation): a user message, which is a plain text, a file message, which is a binary file, such as an image or PDF, and an admin message, which is a plain text also sent through the [dashboard](https://dashboard.sendbird.com/auth/signin) or [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api).
+
+```java
+openChannel.sendUserMessage(MESSAGE, new BaseChannel.SendUserMessageHandler() {
+    @Override
+    public void onSent(UserMessage userMessage, SendBirdException e) {
+        if (e != null) {    // Error.
+            return;
+        }
+    }
+});
+```
