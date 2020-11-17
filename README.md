@@ -197,7 +197,7 @@ Create an [open channel](https://sendbird.com/docs/chat/v3/android/guides/open-c
 
 > Note: All the methods in the following steps are asynchronous, excluding the `Sendbird.init()`. As a result, your client app must receive success callbacks from Sendbird server to proceed to the next step. 
 
-Sendbird recommends using the nesting of methods for callbacks: [Go to Step 4: Enter the channel]() to learn more about how you can nest the `openChannel.enter()` in the `OpenChannel.getChannel()` method.
+Sendbird recommends using the nesting of methods for callbacks: [Go to Step 4: Enter the channel](#step-4-enter-the-channel) to learn more about how you can nest the `openChannel.enter()` in the `OpenChannel.getChannel()` method.
 
 ```java
 OpenChannel.createChannel(new OpenChannel.OpenChannelCreateHandler() {
