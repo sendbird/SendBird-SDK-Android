@@ -128,13 +128,13 @@ When you build your APK with `minifyEnabled true`, add the following line to the
 
 ### Authentication
 
-To use the features of the Chat SDK in your client app, a `Sendbird` instance must be initiated in each client app before user authentication with Sendbird server. These instances communicate and interact with the server based on an authenticated user account, allowing for the client app to use the Chat SDK features. 
+To use the features of the Chat SDK in your client app, a `SendBird` instance must be initiated in each client app before user authentication with Sendbird server. These instances communicate and interact with the server based on an authenticated user account, allowing for the client app to use the Chat SDK features. 
 
 ### Step 1: Initialize the Chat SDK
 
 You need to initialize a Sendbird instance before authentication. Initialization binds the Chat SDK to Android’s context, which allows the Chat SDK to respond to connection and state changes and also enables client apps to use the Chat SDK features. 
 
-To initialize the “Sendbird” instance, pass the “App_ID” of your Sendbird application in the dashboard as an argument to a parameter in the “SendBird.init()” method. As the “SendBird. init()” can only be a single instance, call it only a single time across your Android client app. Typically, initialization is implemented in the user login screen.
+To initialize the `SendBird`instance, pass the `APP_ID` of your Sendbird application in the dashboard as an argument to a parameter in the `SendBird.init()` method. As the `SendBird.init()` can only be a single instance, call it only a single time across your Android client app. Typically, initialization is implemented in the user login screen.
 
 > Note: It is recommended to initialize the Chat SDK in the `onCreate()` method of the [`Application`](https://developer.android.com/reference/android/app/Application) instance. 
 
