@@ -24,7 +24,7 @@ It is simple to implement chat in your client app with the Chat SDK: a user logs
 
 ### For further reference
 
-Find out more about Sendbird Chat for iOS on [Chat SDK for Android doc](https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk).
+Find out more about Sendbird Chat for Android on [Chat SDK for Android doc](https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk).
 
 <br />
 
@@ -42,7 +42,7 @@ The minimum requirements for the Chat SDKfor Android are:
 
 Your application provides two add-ons, which are detailed as follows. 
 
-- [Sendbird UIKit for Android](https://sendbird.com/docs/uikit/v1/ios/getting-started/about-uikit): a development kit with a user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
+- [Sendbird UIKit for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): a development kit with a user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
 
 - [Sendbird SyncManager for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): the Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
 
