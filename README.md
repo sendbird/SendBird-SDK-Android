@@ -34,7 +34,7 @@ This section shows you the prerequisites you need to check for using Sendbird Ch
 
 ### Requirements
 
-The minimum requirements for the Chat SDKfor Android are: 
+The minimum requirements for the Chat SDK for Android are: 
 
 - `Android 4.0 (API level 14) or higher`
 - `Java 7 or higher`
