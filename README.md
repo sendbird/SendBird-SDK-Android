@@ -42,7 +42,7 @@ The minimum requirements for the Chat SDKfor Android are:
 
 ### More about additional features of Sendbird Chat SDK
 
-Your application provides two add-ons, which are detailed as follows. 
+Try building your Sendbird application with these two add-ons:
 
 - [Sendbird UIKit for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): a development kit with a user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
 
