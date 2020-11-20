@@ -22,7 +22,7 @@ Through the Chat SDK for Android, you can efficiently integrate real-time chat i
 
 It is simple to implement chat in your client app with the Chat SDK: a user logs in, sees a list of channels, selects or creates an [open channel](https://sendbird.com/docs/chat/v3/android/guides/open-channel#2-create-a-channel) or a [group channel](https://sendbird.com/docs/chat/v3/android/guides/group-channel#2-create-a-channel), and, through the use of the [channel event handlers](https://sendbird.com/docs/chat/v3/android/guides/event-handler), sends messages to the channel, while also receiving them from other users within the channel. 
 
-### For further reference
+### More about Sendbird Chat SDK for Android
 
 Find out more about Sendbird Chat for Android on [Chat SDK for Android doc](https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk).
 
