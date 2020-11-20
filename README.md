@@ -30,13 +30,15 @@ Find out more about Sendbird Chat for Android on [Chat SDK for Android doc](http
 
 ## Before getting started
 
+This section shows you the prerequisites you need to check for using Sendbird Chat SDK for Android.
+
 ### Requirements
 
 The minimum requirements for the Chat SDKfor Android are: 
 
-- Android 4.0 (API level 14) or higher
-- Java 7 or higher
-- Gradle 3.4.0 or higher
+- `Android 4.0 (API level 14) or higher`
+- `Java 7 or higher`
+- `Gradle 3.4.0 or higher`
 
 ### More about additional features of Sendbird Chat SDK
 
@@ -49,6 +51,8 @@ Your application provides two add-ons, which are detailed as follows.
 <br />
 
 ## Getting started
+
+This section gives you information you need to get started with Sendbird Chat SDK for Android.
 
 ### Try the sample app
 
