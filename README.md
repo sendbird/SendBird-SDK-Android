@@ -152,7 +152,7 @@ After initialization by use of the `init()` method, your client app must always 
 
 Connect a user to Sendbird server either through a unique user ID or in combination with an access token. Sendbird prefers the latter method, as it ensures privacy with the user. The former is useful during the developmental phase or if your service doesn't require additional security.
 
-#### A. User ID
+#### A. Using a unique user ID
 
 Connect a user to Sendbird server using their unique **user ID**. By default, Sendbird server can authenticate a user by a unique user ID. Upon request for a connection, the server queries the database to check for a match. Any untaken user ID is automatically registered as a new user to the Sendbird system, while an existing ID is allowed to log indirectly. The ID must be unique within a Sendbird application, such as a hashed email address or phone number in your service.
 
@@ -169,7 +169,7 @@ SendBird.connect(USER_ID, new SendBird.ConnectHandler() {
 });
 ```
 
-#### B. A combination of user ID and access token ID 
+#### B. Using a combination of unique user ID and access token ID 
 
 Sendbird prefers that you pass the APP ID through the use of a token, as it ensures privacy for the users. [Create a user](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user) along with their access token, or [issue an access token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-update-a-user) for an existing user. Once an access token is issued, a user is required to provide the access token in the `SendBird.connect()` method which is used for logging in.
 
