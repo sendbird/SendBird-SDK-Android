@@ -46,7 +46,7 @@ Try building your Sendbird application with these two add-ons:
 
 - [Sendbird UIKit for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): a development kit with a user interface that enables an easy and fast integration of standard chat features into new or existing client apps.
 
-- [Sendbird SyncManager for Android](https://sendbird.com/docs/uikit/v1/android/getting-started/about-uikit): the Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
+- [Sendbird SyncManager for Android](https://sendbird.com/docs/syncmanager/v1/android/getting-started/about-syncmanager): the Chat SDK add-on that optimizes the user caching experience by interlinking the synchronization of the local data storage with the chat data in Sendbird server through an event-driven structure. 
 
 <br />
 
