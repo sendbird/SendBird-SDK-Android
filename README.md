@@ -84,7 +84,7 @@ repositories {
     maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
 }
 dependencies {
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.145'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.151'
 }
 ```
 
