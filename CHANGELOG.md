@@ -1,5 +1,10 @@
 ## Change Log
 
+### v3.0.151 (Nov 17, 2020)
+
+* `GroupChannel#setPushPreference(boolean, GroupChannelSetPushPreferenceHandler)` is now deprecated. Please use `GroupChannel#setMyPushTriggerOption(PushTriggerOption, GroupChannelSetMyPushTriggerOptionHandler)` instead.
+* Improved stability.
+
 ### v3.0.150 (Oct 30, 2020)
 * Added `createChannel()` with `OpenChannelParams` in `OpenChannel`.
 * Added `updateChannel()` with `OpenChannelParams` in `OpenChannel`.
