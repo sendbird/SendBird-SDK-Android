@@ -24,7 +24,7 @@ It is simple to implement chat in your client app with the Chat SDK: a user logs
 
 ### More about Sendbird Chat SDK for Android
 
-Find out more about Sendbird Chat for Android on [Chat SDK for Android doc](https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk).
+Find out more about Sendbird Chat for Android on [Chat SDK for Android doc](https://sendbird.com/docs/chat/v3/android/getting-started/about-chat-sdk).  If you have any comments or questions regarding bugs and feature requests, visit [Sendbird community](https://community.sendbird.com). 
 
 <br />
 
