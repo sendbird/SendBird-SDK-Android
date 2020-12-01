@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.152 (Dec 01, 2020)
+
+* Deprecated `addOperator(User)`, `addOperators(List<User>)`, `addOperatorId(String)`, `addOperatorIds(List<String>)` in `OpenChannelParams`.
+* Added `setOperators(List<User>)`, `setOperatorIds(List<String>)` in `OpenChannelParams`.
+* Improved stability.
+
 ### v3.0.151 (Nov 17, 2020)
 
 * `GroupChannel#setPushPreference(boolean, GroupChannelSetPushPreferenceHandler)` is now deprecated. Please use `GroupChannel#setMyPushTriggerOption(PushTriggerOption, GroupChannelSetMyPushTriggerOptionHandler)` instead.
