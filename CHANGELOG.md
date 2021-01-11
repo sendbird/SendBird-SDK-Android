@@ -1,5 +1,15 @@
 ## Change Log
 
+### v3.0.154 (Jan 11, 2021)
+
+* Improved stability.
+
+### v3.0.153 (Dec 15, 2020)
+
+* OOM related to `APITaskQueue` has been fixed.
+* Now we provide a wider scope of logs related to network communications. `LogLevel`, `SendBird#setLoggerLevel(LogLevel)` are added. The default log level is `Warn`.
+* File size check logic for sending a file message has been added to the SDK.
+
 ### v3.0.152 (Dec 01, 2020)
 
 * Deprecated `addOperator(User)`, `addOperators(List<User>)`, `addOperatorId(String)`, `addOperatorIds(List<String>)` in `OpenChannelParams`.
