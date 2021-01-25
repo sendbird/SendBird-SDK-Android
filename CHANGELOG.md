@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.156 (Jan 25, 2021)
+
+* Changed the visibility scope of `AbstractPushHandler` from `package-private` to `public`. This change was made to support Kotlin clients.
+
 ### v3.0.155 (Jan 19, 2021)
 
 * Fixed a bug where the SDK tried to coerce non-integer into integer regarding OGImage's width and height. If the height and width are not numbers, the fields will be set to 0.
