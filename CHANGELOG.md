@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.157 (Feb 04, 2021)
+
+* Fixed a bug which response(`PushTokenRegistrationStatus`) for `RegisterPushTokenWithStatusHandler` could be null.
+
 ### v3.0.156 (Jan 25, 2021)
 
 * Changed the visibility scope of `AbstractPushHandler` from `package-private` to `public`. This change was made to support Kotlin clients.
