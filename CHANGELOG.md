@@ -1,5 +1,11 @@
 ## Change Log
 
+### v3.0.158 (Mar 03, 2021)
+
+* Deprecated `SendBirdError#ERR_ACCESS_TOKEN_NOT_VALID`, `SendBirdError#ERR_SESSION_TOKEN_EXPIRED`. The two error codes had same value (`400302`) and will be replaced by `SendBirdError#ERR_INVALID_TOKEN` (400302).
+* Added `BaseChannel#getCachedMetaData`.
+* Added a new constructor `MessageSearchQuery.Builder(MessageSearchQuery)` in `MessageSearchQuery.Builder`.
+
 ### v3.0.157 (Feb 04, 2021)
 
 * Fixed a bug which response(`PushTokenRegistrationStatus`) for `RegisterPushTokenWithStatusHandler` could be null.

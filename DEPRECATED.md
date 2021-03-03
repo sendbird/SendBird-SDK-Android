@@ -1,5 +1,12 @@
 # Deprecated classes, methods, properties
 
+## v3.0.158
+
+| Old class           | Old field                     | New class           | New field                         |
+| ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
+| `SendBirdError` | `ERR_ACCESS_TOKEN_NOT_VALID` | `SendBirdError` | `ERR_INVALID_TOKEN` |
+| `SendBirdError` | `ERR_SESSION_TOKEN_EXPIRED`        | `SendBirdError` | `ERR_INVALID_TOKEN` |
+
 ## v3.0.152
 
 ### Methods
