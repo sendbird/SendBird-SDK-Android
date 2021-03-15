@@ -1,5 +1,12 @@
 ## Change Log
 
+### v3.0.159 (Mar 15, 2021)
+
+* Added `alwaysReceiveMessage()` in `SendBirdPushHandler` and `SendBirdHmsPushHandler`.
+* When using multi-device support for push notification, by default, the SDK ignores push payload when the app is connected to the Sendbird (online). To always receive push payload regardless of the connection state, override this method and return `true`.
+* Added `SendBird.ChannelHandler#onChannelMemberCountChanged` and `SendBird.ChannelHandler#onChannelParticipantCountChanged`.
+* SDK now uses AndroidX libraries instead of support libraries. (with jetifier turned off)
+
 ### v3.0.158 (Mar 03, 2021)
 
 * Deprecated `SendBirdError#ERR_ACCESS_TOKEN_NOT_VALID`, `SendBirdError#ERR_SESSION_TOKEN_EXPIRED`. The two error codes had same value (`400302`) and will be replaced by `SendBirdError#ERR_INVALID_TOKEN` (400302).
