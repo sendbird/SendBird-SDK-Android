@@ -1,5 +1,10 @@
 ## Change Log
 
+### v.3.0.160 (Mar 30, 2021)
+
+* Internal changes and refactoring to improve stability.
+* This is the last release that will be available on `jcenter`. From the next release, SDK binary will be available from Sendbird's maven repository: `maven { url "https://repo.sendbird.com/public/maven" }`. 
+
 ### v3.0.159 (Mar 15, 2021)
 
 * Added `alwaysReceiveMessage()` in `SendBirdPushHandler` and `SendBirdHmsPushHandler`.

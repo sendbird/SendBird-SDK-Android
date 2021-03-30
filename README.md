@@ -74,23 +74,32 @@ Regardless of the platform, only one Sendbird application can be integrated per 
 
 ### Step 2: Install the Chat SDK
 
-If you’re familiar with using external libraries or SDKs, installing the Chat SDK is simple. Sendbird provides three installation methods for the Chat SDK for Android, which are listed in order of preference as follows. 
-
-1. The best way to install the Chat SDK is by adding the `build.gradle` file at app level, not project level.
+Installing the Chat SDK is simple if you're familiar with using external libraries or SDKs. First, add the following code to your **root** `build.gradle` file:
 
 ```gradle
-// build.gradle
-repositories {
-    maven { url "https://raw.githubusercontent.com/sendbird/SendBird-SDK-Android/master/" }
-}
-dependencies {
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.159'
+allprojects {
+	repositories {
+		...
+		maven { url "https://repo.sendbird.com/public/maven" }
+	}
 }
 ```
 
-2. The second would be to download the `.aar` file from the link below. Copy this file into your **libs/** folder, and make sure you include the library in your `build.gradle` file as well.
+> Note: Make sure the above code block isn't added to your module `bundle.gradle` file.
 
-3. The last method is downloading the Chat SDK through [JCenter](https://mvnrepository.com/repos/jcenter) Maven repository. Check your code to see if the `jcenter()` is added in the `build.gradle` file.
+Then, add the dependency to the project's top-level `build.gradle` file:
+
+```gradle
+dependencies {
+	...
+	implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.160'
+	...
+}
+```
+
+> Note: Chat SDK versions `3.0.160` or lower can be downloaded from JCenter until February 1, 2022. SDK versions higher than `3.0.160` will be available on Sendbird's remote repository.
+
+Alternatively, you can download the `.aar` file from this repository. Copy this file into your `libs/` folder, and make sure you include the library in your `build.gradle` file as well.
 
 #### - TLS 1.3
 
