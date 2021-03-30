@@ -78,10 +78,10 @@ Installing the Chat SDK is simple if you're familiar with using external librari
 
 ```gradle
 allprojects {
-	repositories {
-		...
-		maven { url "https://repo.sendbird.com/public/maven" }
-	}
+    repositories {
+        ...
+        maven { url "https://repo.sendbird.com/public/maven" }
+    }
 }
 ```
 
@@ -91,9 +91,9 @@ Then, add the dependency to the project's top-level `build.gradle` file:
 
 ```gradle
 dependencies {
-	...
-	implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.160'
-	...
+    ...
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.160'
+    ...
 }
 ```
 
