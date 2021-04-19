@@ -92,7 +92,7 @@ Then, add the dependency to the project's top-level `build.gradle` file:
 ```gradle
 dependencies {
     ...
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.161'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.162'
     ...
 }
 ```

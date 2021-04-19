@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.162 (April 19, 2021)
+* Improved stability.
+
 ### v3.0.161 (April 13, 2021)
 
 * Added `LogLevel#NONE`.
