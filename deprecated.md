@@ -1,5 +1,10 @@
 # Deprecated classes, methods, properties
 
+## v3.0.162
+| Old class           | Old method                     | New class           | New method                         |
+| ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
+| `ThreadMessageListParams` | `ThreadMessageListParams(int, int, BaseChannel.MessageTypeFilter, String, Collection, List, boolean, boolean, boolean, boolean, boolean)` | `ThreadMessageListParams` | `ThreadMessageListParams#ThreadMessageListParams(int, int, BaseChannel.MessageTypeFilter, Collection, List, boolean, boolean, boolean, boolean, boolean)}`, and `ThreadMessageListParams(int, int, BaseChannel.MessageTypeFilter, String, List, boolean, boolean, boolean, boolean, boolean)}` |
+
 ## v3.0.158
 
 | Old class           | Old field                     | New class           | New field                         |
