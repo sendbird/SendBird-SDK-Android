@@ -12,6 +12,7 @@
 * Added `LogLevel#NONE`.
 * Added `AppleCriticalAlertOptions` class and `getAppleCriticalAlertOptions` and `setAppleCriticalAlertOptions` in `BaseMessage`, `BaseMessageParams`, `FileMessageParams`, `UserMessageParams`, and `ScheduledUserMessageParams`. 
 * From this version, it is not available on `jcenter`. This version can only be available from Sendbird's maven repository: `maven { url "https://repo.sendbird.com/public/maven" }`.
+* From this version, `minSdkVersion` is upgraded to `16` from `14`. 
 
 ### v.3.0.160 (Mar 30, 2021)
 
