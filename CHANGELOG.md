@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.164 (May 11, 2021)
+* Fixed strict mode violations.
+
 ### v3.0.163 (April 27, 2021)
 * Added `setNicknameStartsWithFilter()` in `ApplicationUserListQuery`
 * Improved stability.
