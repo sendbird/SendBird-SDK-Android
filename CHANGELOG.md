@@ -1,5 +1,9 @@
 ## Change Log
 
+### v3.0.165 (May 25, 2021)
+* SDK now uses different strategy for creating thread when `SendBird.ThreadOption.NEW_THREAD` is enabled. This is done to save system resources. 
+* Added `getJoinedAt()` in `GroupChannel`
+
 ### v3.0.164 (May 11, 2021)
 * Fixed strict mode violations.
 
