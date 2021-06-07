@@ -1,5 +1,8 @@
 ## Change Log
 
+### v3.0.166 (Jun 7, 2021)
+* Added support for [Firebase Cloud Messaging version 22.0.0](https://firebase.google.com/support/release-notes/android#messaging_v22-0-0) in `SendBirdPushHandler`. (for push notification with [multi-device support](https://sendbird.com/docs/chat/v3/android/guides/push-notifications-multi-device-support))
+
 ### v3.0.165 (May 25, 2021)
 * SDK now uses different strategy for creating thread when `SendBird.ThreadOption.NEW_THREAD` is enabled. This is done to save system resources. 
 * Added `getJoinedAt()` in `GroupChannel`

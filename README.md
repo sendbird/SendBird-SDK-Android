@@ -2,7 +2,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.0.165-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.165)
+[![Maven](https://img.shields.io/badge/maven-v3.0.166-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.0.166)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Table of contents
@@ -39,6 +39,7 @@ The minimum requirements for the Chat SDK for Android are:
 - `Android 4.0 (API level 14) or higher`
 - `Java 7 or higher`
 - `Gradle 3.4.0 or higher`
+- `Firebase Cloud Messaging 19.0.1 or higher`
 
 ### More about additional features of Sendbird Chat SDK
 
@@ -92,7 +93,7 @@ Then, add the dependency to the project's top-level `build.gradle` file:
 ```gradle
 dependencies {
     ...
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.165'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.166'
     ...
 }
 ```
@@ -109,7 +110,7 @@ TLS 1.3 support is included in version 3.0.106 of the SendBird Android SDK. TLS 
 
 ```gradle
 dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.165') {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.0.166') {
         exclude group: 'org.conscrypt', module: 'conscrypt-android'
     }
 }
