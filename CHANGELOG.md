@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.0.168 (Jul 20, 2021)
+* Improved stability.
+
 ### v3.0.167 (Jul 5, 2021)
 * Improved stability.
 
