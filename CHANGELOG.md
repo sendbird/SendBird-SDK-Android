@@ -1,6 +1,6 @@
 # Change Log
 
-### v3.0.168 (Aug 5, 2021)
+### v3.0.169 (Aug 6, 2021)
 * Optimized Supergroup protocol handling to improve performance for specific use cases
 
 ### v3.0.168 (Jul 20, 2021)
