@@ -1,5 +1,39 @@
 # Deprecated classes, methods, properties
 
+## v3.0.170
+| Old class           | Old method                     | New class           | New method                         |
+| ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
+| `BaseChannel` | `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)` | `BaseChannel` | `getMessagesByMessageId(long, MessageListParams, GetMessagesHandler)` |
+| `BaseChannel` | `getMessageChangeLogsByToken(String, GetMessageChangeLogsByTokenHandler)` | `BaseChannel` | `getMessageChangeLogsSinceToken(String, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
+| `BaseChannel` | `getMessageChangeLogsByToken(String, boolean, GetMessageChangeLogsByTokenHandler)` | `BaseChannel` | `getMessageChangeLogsSinceToken(String, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
+| `BaseChannel` | `getMessageChangeLogsByToken(String, boolean, boolean, GetMessageChangeLogsByTokenHandler)` | `BaseChannel` | `getMessageChangeLogsSinceToken(String, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
+| `BaseChannel` | `getMessageChangeLogsByTimestamp(long, GetMessageChangeLogsHandler)` | `BaseChannel` | `getMessageChangeLogsSinceTimestamp(long, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
+| `BaseChannel` | `getMessageChangeLogsByTimestamp(long, boolean, GetMessageChangeLogsHandler)` | `BaseChannel` | `getMessageChangeLogsSinceTimestamp(long, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
+| `BaseChannel` | `getMessageChangeLogsByTimestamp(long, boolean, boolean, GetMessageChangeLogsHandler)` | `BaseChannel` | `getMessageChangeLogsSinceTimestamp(long, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
+
 ## v3.0.162
 | Old class           | Old method                     | New class           | New method                         |
 | ------------------- | ------------------------------ | ------------------- | ---------------------------------- |

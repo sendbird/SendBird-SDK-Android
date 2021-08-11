@@ -1,5 +1,38 @@
 # Change Log
 
+### v3.0.170 (Aug 11, 2021)
+* Deprecated following methods and these will be removed on new release after December 31, 2021. Refer to `DEPRECATED.md` for replacement details.
+   * `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
+   * `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)`
+   * `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)`
+   * `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)`
+   * `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
+   * `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)`
+   * `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)`
+   * `getPreviousMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesByTimestamp(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)`
+   * `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
+   * `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)`
+   * `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)`
+   * `getNextMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)`
+   * `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
+   * `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)`
+   * `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)`
+   * `getPreviousMessagesById(long, boolean, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, List<String>, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, GetMessagesHandler)`
+   * `getPreviousAndNextMessagesById(long, int, int, boolean, MessageTypeFilter, String, List<String>, boolean, boolean, GetMessagesHandler)`
+   * `getMessageChangeLogsByToken(String, GetMessageChangeLogsByTokenHandler)`
+   * `getMessageChangeLogsByToken(String, boolean, GetMessageChangeLogsByTokenHandler)`
+   * `getMessageChangeLogsByToken(String, boolean, boolean, GetMessageChangeLogsByTokenHandler)`
+   * `getMessageChangeLogsByTimestamp(long, GetMessageChangeLogsHandler)`
+   * `getMessageChangeLogsByTimestamp(long, boolean, GetMessageChangeLogsHandler)`
+   * `getMessageChangeLogsByTimestamp(long, boolean, boolean, GetMessageChangeLogsHandler)`
+
 ### v3.0.169 (Aug 6, 2021)
 * Optimized Supergroup protocol handling to improve performance for specific use cases
 
