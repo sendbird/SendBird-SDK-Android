@@ -1,5 +1,15 @@
 # Change Log
 
+### v3.0.171
+* Added `setMetaDataValuesFilter(String, List<String>)`, `setMetaDataValueStartsWithFilter(String, String)` in `GroupChannelListQuery` and `PublicGroupChannelListQuery`.
+* Added `MessagePayloadFilter` which contains filters regarding message payload used in loading messages. Affected classes includes:
+   * `MessageListParams`
+   * `ThreadMessageListParams`
+   * `MessageRetrievalParams`
+   * `MessageChangeLogsParams`
+   * `PreviousMessageListQuery`
+* Fixed an occasional NPE bug while parsing `BaseMessage` object.
+
 ### v3.0.170 (Aug 11, 2021)
 * Deprecated following methods and these will be removed on new release after December 31, 2021. Refer to `DEPRECATED.md` for replacement details.
    * `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)`
