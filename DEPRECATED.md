@@ -1,6 +1,15 @@
 # Deprecated classes, methods, properties
 
+## v3.0.172
+
+### Methods
+| Old class           | Old method                     | New class           | New method                         |
+| ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
+| `GroupChannel` | `markAsRead()` | `GroupChannel` | `markAsRead(SendBird.MarkAsReadHandler)` |
+
 ## v3.0.170
+
+### Methods
 | Old class           | Old method                     | New class           | New method                         |
 | ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
 | `BaseChannel` | `getNextMessagesByTimestamp(long, boolean, int, boolean, MessageTypeFilter, String, GetMessagesHandler)` | `BaseChannel` | `getMessagesByTimestamp(long, MessageListParams, GetMessagesHandler)` |
@@ -35,13 +44,16 @@
 | `BaseChannel` | `getMessageChangeLogsByTimestamp(long, boolean, boolean, GetMessageChangeLogsHandler)` | `BaseChannel` | `getMessageChangeLogsSinceTimestamp(long, MessageChangeLogsParams, GetMessageChangeLogsHandler)` |
 
 ## v3.0.162
+
+### Methods
 | Old class           | Old method                     | New class           | New method                         |
 | ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
 | `ThreadMessageListParams` | `ThreadMessageListParams(int, int, BaseChannel.MessageTypeFilter, String, Collection, List, boolean, boolean, boolean, boolean, boolean)` | `ThreadMessageListParams` | `ThreadMessageListParams#ThreadMessageListParams(int, int, BaseChannel.MessageTypeFilter, Collection, List, boolean, boolean, boolean, boolean, boolean)}`, and `ThreadMessageListParams(int, int, BaseChannel.MessageTypeFilter, String, List, boolean, boolean, boolean, boolean, boolean)}` |
 
 ## v3.0.158
 
-| Old class           | Old field                     | New class           | New field                         |
+### Properties
+| Old class           | Old property                     | New class           | New property                         |
 | ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
 | `SendBirdError` | `ERR_ACCESS_TOKEN_NOT_VALID` | `SendBirdError` | `ERR_INVALID_TOKEN` |
 | `SendBirdError` | `ERR_SESSION_TOKEN_EXPIRED`        | `SendBirdError` | `ERR_INVALID_TOKEN` |

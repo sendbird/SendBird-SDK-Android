@@ -1,6 +1,9 @@
 # Change Log
 
-### v3.0.171
+### v3.0.172 (Sep 23, 2021)
+* Added `markAsRead(SendBird.MarkAsReadHandler)` and deprecated `markAsRead()` in `GroupChannel`.
+
+### v3.0.171 (Sep 1, 2021)
 * Added `setMetaDataValuesFilter(String, List<String>)`, `setMetaDataValueStartsWithFilter(String, String)` in `GroupChannelListQuery` and `PublicGroupChannelListQuery`.
 * Added `MessagePayloadFilter` which contains filters regarding message payload used in loading messages. Affected classes includes:
    * `MessageListParams`
