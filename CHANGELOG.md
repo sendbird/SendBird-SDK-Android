@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.0.173 (Oct 26, 2021)
+* Added `RestrictionInfo` which contains information for users who are either muted or banned.
+* Added `RestrictionUser` for muted or banned users, which contains `RestrictionInfo`.
+   * `MutedUserListQuery.next()` and `BannedUserListQuery.next()` will give a list of `RestrictedUser` objects.
+   * `ChannelHandler.onUserMuted()` and `ChannelHandler.onUserBanned()` will give a `RestrictedUser` object.
+* Added `getRestrictionInfo()` in `Member`.
+
 ### v3.0.172 (Sep 23, 2021)
 * Added `markAsRead(SendBird.MarkAsReadHandler)` and deprecated `markAsRead()` in `GroupChannel`.
 
