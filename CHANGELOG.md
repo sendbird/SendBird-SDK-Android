@@ -1,4 +1,31 @@
 # Change Log
+### v3.1.0 (Nov 23, 2021)
+- Local caching support. See [Local Caching](https://sendbird.com/docs/chat/v3/android/guides/local-caching) for details.
+  - Added `MessageCollection`.
+  - Added `MessageCollectionHandler`.
+  - Added `MessageContext`.
+  - Added `MessageCollectionInitPolicy`.
+  - Added `GroupChannelCollection`.
+  - Added `GroupChannelCollectionHandler`.
+  - Added `GroupChannelContext`.
+  - Added `CollectionEventSource`.
+  - Deprecated `SendBird.init(String, Context)`.
+    - Replaced by `SendBird.init(String, Context, boolean, InitResultHandler)`.
+  - Deprecated `SendBird.initFromForeground(String, Context)`.
+    - Replaced by `SendBird.initFromForeground(String, Context, boolean, InitResultHandler)`.
+  - Added SendBird.clearCachedData(Context, CompletionHandler).
+  - Added SendBird.clearCachedMessages(String, CompletionHandler).
+  - Added SendBird.getCachedDataSize(Context).
+
+- Added Reply to Channel feature.
+  - Added `ReplyTypeFilter` for loading messages with respect to message's reply messages.
+    - Added `setReplyTypeFilter` and `getReplyTypeFilter` in `MessageListParams`, `MessageChangeLogsParams` and `PreviousMessageListQuery`.
+    - Deprecated `setIncludeReplies` and `shouldIncludeReplies` in `MessageListParams`, `MessageChangeLogsParams` and `PreviousMessageListQuery`.
+  - Deprecated `setIncludeParentMessageText` and `shouldIncludeParentMessageText` in `MessageListParams`, `MessageChangeLogsParams` and `PreviousMessageListQuery`.
+    - Replaced by `setMessagePayloadFilter` with `MessagePayloadFilter.setIncludeParentMessageInfo()` set.
+  - Added `isReplyToChannel` in `BaseMessage`.
+  - Added `setReplyToChannel` in `BaseMessageParams`.
+  - Added `getParentMessage` in `BaseMessage`.
 
 ### v3.0.173 (Oct 26, 2021)
 * Added `RestrictionInfo` which contains information for users who are either muted or banned.

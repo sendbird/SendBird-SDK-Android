@@ -1,5 +1,25 @@
 # Deprecated classes, methods, properties
 
+## v3.1.0
+
+### Methods
+| Old class           | Old method                     | New class           | New method                         |
+| ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
+| `SendBird` | `init(String, Context)` | `SendBird` | `init(String, Context, boolean, InitResultHandler)` |
+| `SendBird` | `initFromForeground(String, Context)` | `SendBird` | `initFromForeground(String, Context, boolean, InitResultHandler)` |
+| `MessageListParams` | `setIncludeReplies()` | `MessageListParams` | `setReplyTypeFilter(ReplyTypeFilter)` |
+| `MessageChangeLogsParams` | `setIncludeReplies(boolean)` | `MessageChangeLogsParams` | `setReplyTypeFilter(ReplyTypeFilter)` |
+| `PreviousMessageListQuery` | `setIncludeReplies(boolean)` | `PreviousMessageListQuery` | `setReplyTypeFilter(ReplyTypeFilter)` |
+| `MessageListParams` | `getIncludeReplies()` | `MessageListParams` | `getReplyTypeFilter()` |
+| `MessageChangeLogsParams` | `getIncludeReplies(boolean)` | `MessageChangeLogsParams` | `getReplyTypeFilter()` |
+| `PreviousMessageListQuery` | `getIncludeReplies()` | `PreviousMessageListQuery` | `getReplyTypeFilter()` |
+| `MessageListParams` | `setIncludeParentMessageText()` | `MessageListParams` | `setReplyTypeFilter()` |
+| `MessageChangeLogsParams` | `setIncludeParentMessageText()` | `MessageChangeLogsParams` | `setReplyTypeFilter()` |
+| `PreviousMessageListQuery` | `setIncludeParentMessageText()` | `PreviousMessageListQuery` | `setReplyTypeFilter()` |
+| `MessageListParams` | `shouldIncludeParentMessageText(boolean)` | `MessageListParams` | `setMessagePayloadFilter(MessagePayloadFilter)` |
+| `MessageChangeLogsParams` | `shouldIncludeParentMessageText(boolean)` | `MessageChangeLogsParams` | `setMessagePayloadFilter(MessagePayloadFilter)` |
+| `PreviousMessageListQuery` | `shouldIncludeParentMessageText(boolean)` | `PreviousMessageListQuery` | `setMessagePayloadFilter(MessagePayloadFilter)` |
+
 ## v3.0.172
 
 ### Methods
