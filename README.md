@@ -2,7 +2,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.1.0-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.1.0)
+[![Maven](https://img.shields.io/badge/maven-v3.1.1-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.1.1)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Table of contents
@@ -94,7 +94,7 @@ Then, add the dependency to the project's top-level `build.gradle` file:
 ```gradle
 dependencies {
     ...
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.1.0'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.1.1'
     ...
 }
 ```
@@ -111,7 +111,7 @@ TLS 1.3 support is included in version 3.0.106 of the SendBird Android SDK. TLS 
 
 ```gradle
 dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.1.0') {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.1.1') {
         exclude group: 'org.conscrypt', module: 'conscrypt-android'
     }
 }
@@ -265,9 +265,9 @@ openChannel.sendUserMessage(MESSAGE, new BaseChannel.SendUserMessageHandler() {
 <br />
 
 ## Notice:
-### v.3.1.0 Release (Local Caching)
+### v.3.1.1 Release (Local Caching)
 
-Local caching has been introduced to the Chat SDK in this v3.1.0 release. The newly embedded local caching functionalities can be enabled through a parameter `useCaching` in the `init()`. When local caching is turned off, the SDK is backward compatible with v3.0. This means it will work exactly the same as v3.0 and therefore is compatible with SyncManager. However, we strongly recommend you to use the Chat SDK with local caching instead of SyncManager for the following reasons:
+Local caching has been introduced to the Chat SDK in this v3.1.1 release. The newly embedded local caching functionalities can be enabled through a parameter `useCaching` in the `init()`. When local caching is turned off, the SDK is backward compatible with v3.0. This means it will work exactly the same as v3.0 and therefore is compatible with SyncManager. However, we strongly recommend you to use the Chat SDK with local caching instead of SyncManager for the following reasons:
 - Sendbird Chat SDK with local caching supports new functionalities such as group channel collection, message collection, and message auto-resend.
 - SyncManager will be deprecated eventually as the embedded local caching serves as the new and better version of it.
 

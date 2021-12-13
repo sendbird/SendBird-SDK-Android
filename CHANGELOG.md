@@ -1,5 +1,13 @@
 # Change Log
-### v3.1.0 (Nov 23, 2021)
+### v3.1.1 (Dev 10, 2021)
+- Fixed NoSuchFieldException on deserializing a BaseMessage object when proguard is enabled.
+- Fixed bugs related to updating a message.
+  - BaseMessage.message being reset if UserMessageParams.message is not set explicitly.
+  - BaseMessage.requestId getting parsed with wrong key.
+- Improved stability.
+
+### <strike>v3.1.0 (Nov 23, 2021)</strike> *DEPRECATED*
+
 - Local caching support. See [Local Caching](https://sendbird.com/docs/chat/v3/android/guides/local-caching) for details.
   - Added `MessageCollection`.
   - Added `MessageCollectionHandler`.

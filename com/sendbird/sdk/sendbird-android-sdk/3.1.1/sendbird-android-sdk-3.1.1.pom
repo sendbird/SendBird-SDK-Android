@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sendbird.sdk</groupId>
   <artifactId>sendbird-android-sdk</artifactId>
-  <version>3.1.0</version>
+  <version>3.1.1</version>
   <packaging>aar</packaging>
   <name>Sendbird Android SDK</name>
   <description>Sendbird is simplest solution for chat and messaging. It enables your app to engage and retain your users in real-time.</description>
