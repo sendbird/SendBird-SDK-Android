@@ -7,7 +7,7 @@
 - Improved stability.
 
 ### <strike>v3.1.0 (Nov 23, 2021)</strike> *DEPRECATED*
-
+- **Deprecated as this version would cause `NoSuchFieldException` from `BaseMessage.buildFromSerialzedData()` if ProGuard was enabled.**
 - Local caching support. See [Local Caching](https://sendbird.com/docs/chat/v3/android/guides/local-caching) for details.
   - Added `MessageCollection`.
   - Added `MessageCollectionHandler`.
