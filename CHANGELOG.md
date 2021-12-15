@@ -1,9 +1,14 @@
 # Change Log
+### v3.1.2 (Dev 15, 2021)
+
+- Fixed channel’s metadata not being cached in database which causes `BaseChannel.getCachedMetaData()` returning an empty Map.
+
 ### v3.1.1 (Dev 10, 2021)
-- Fixed NoSuchFieldException on deserializing a BaseMessage object when proguard is enabled.
+
+- Fixed `NoSuchFieldException` on deserializing a BaseMessage object when proguard is enabled.
 - Fixed bugs related to updating a message.
-  - BaseMessage.message being reset if UserMessageParams.message is not set explicitly.
-  - BaseMessage.requestId getting parsed with wrong key.
+  - `BaseMessage.message` being reset if UserMessageParams.message is not set explicitly.
+  - `BaseMessage.requestId` getting parsed with wrong key.
 - Improved stability.
 
 ### <strike>v3.1.0 (Nov 23, 2021)</strike> *DEPRECATED*
