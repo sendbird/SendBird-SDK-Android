@@ -1,4 +1,7 @@
 # Change Log
+### v3.1.3 (Dec 21, 2021)
+- Fixed an issue that channels created in the background do not properly load from GroupChannelCollection.
+
 ### v3.1.2 (Dev 15, 2021)
 
 - Fixed channel’s metadata not being cached in database which causes `BaseChannel.getCachedMetaData()` returning an empty Map.
