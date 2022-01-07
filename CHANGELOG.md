@@ -1,4 +1,8 @@
 # Change Log
+### v3.1.4 (Jan 7, 2022)
+- Added `applyParentMessage(BaseMessage)` in `BaseMessage` to allow a child (reply) message to update a parent message object when updated.
+- Fixed a bug that could cause an ANR (Application Not Responding) in `SendBird.connect()`.
+
 ### v3.1.3 (Dec 21, 2021)
 - Fixed an issue that channels created in the background do not properly load from GroupChannelCollection.
 
