@@ -1,4 +1,15 @@
 # Change Log
+### v3.1.5 (Jan 26, 2022)
+- Added static method to create `Query` instances.
+  - `static PreviousMessageListQuery.create(channelType, channelUrl)`
+  - `static OperatorListQuery.create(channelType, channelUrl)`
+  - `static PollListQuery.create(channelUrl)`
+  - `static PollVoterListQuery.create(pollId, pollOptionId, channelUrl)`
+  - `static BannedUserListQuery.create(channelType, channelUrl)`
+  - `static GroupChannelMemberListQuery.create(channelUrl)`
+  - `static ParticipantListQuery.create(channelUrl)`
+  - `static MutedUserListQuery.create(channelType, channelUrl)`
+
 ### v3.1.4 (Jan 7, 2022)
 - Added `applyParentMessage(BaseMessage)` in `BaseMessage` to allow a child (reply) message to update a parent message object when updated.
 - Fixed a bug that could cause an ANR (Application Not Responding) in `SendBird.connect()`.
