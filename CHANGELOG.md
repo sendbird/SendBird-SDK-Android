@@ -1,4 +1,8 @@
 # Change Log
+### v3.1.6 (Feb 4, 2022)
+- Fixed a bug in GroupChannelCollection that caused crashes when channels are loaded after the collection is disposed.
+- Deprecated `ConnectionManager`.
+
 ### v3.1.5 (Jan 26, 2022)
 - Added static method to create `Query` instances.
   - `static PreviousMessageListQuery.create(channelType, channelUrl)`

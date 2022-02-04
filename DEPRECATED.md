@@ -1,5 +1,19 @@
 # Deprecated classes, methods, properties
 
+## v3.1.6
+### Classes
+
+| Old class                  | New method                   |
+| -------------------------- | --------------------------- |
+| `ConnectionManager` | `SendBird.connect(String, ConnectHandler)` |
+
+### Methods
+
+| Old class           | Old method                     | New class           | New method                         |
+| ------------------- | ------------------------------ | ------------------- | ---------------------------------- |
+| `SendBird.Options` | `setAuthenticationTimeout(int)` | `SendBird.Options` | `setConnectionTimeout(int)` |
+
+
 ## v3.1.0
 
 ### Methods
