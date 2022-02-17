@@ -1,4 +1,10 @@
 # Change Log
+
+### v3.1.7 (Feb 17, 2022)
+- Fixed a bug where `ACK_TIMEOUT(800180)` errors were incorrectly being sent.
+- Fixed a bug in MessageCollection where pending messages could remain in a pending state after being sent.
+- Fixed a bug in `baseChannel.sendUserMessage()` and `baseChannel.sendFileMessage()`, where the callback could've been called twice when the message failed to be sent.
+
 ### v3.1.6 (Feb 4, 2022)
 - Fixed a bug in GroupChannelCollection that caused crashes when channels are loaded after the collection is disposed.
 - Deprecated `ConnectionManager`.
