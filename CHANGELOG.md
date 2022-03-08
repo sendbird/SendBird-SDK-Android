@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.8 (Mar 8, 2022)
+- Added `SendBird.getTotalUnreadChannelCount(GroupChannelTotalUnreadChannelCountParams, GroupChannel.GroupChannelTotalUnreadChannelCountHandler)`.
+
 ### v3.1.7 (Feb 17, 2022)
 - Fixed a bug where `ACK_TIMEOUT(800180)` errors were incorrectly being sent.
 - Fixed a bug in MessageCollection where pending messages could remain in a pending state after being sent.
