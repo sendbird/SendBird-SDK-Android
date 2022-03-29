@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.1.9 (Mar 29, 2022)
+- Fixed NPE in `AbstractPushHandlers.isUniquePushToken()`.
+- Fixed bugs.
+  - Channel not being removed from the `GroupChannelCollection` when a user leaves a public group channel.
+  - Channel's metadata related events not being delivered to `MessageCollectionHandler.onChannelUpdated()`.
+  - Message events not being fired when sending a new message right after creating a new `MessageCollection` instance.
+
 ### v3.1.8 (Mar 8, 2022)
 - Added `SendBird.getTotalUnreadChannelCount(GroupChannelTotalUnreadChannelCountParams, GroupChannel.GroupChannelTotalUnreadChannelCountHandler)`.
 
