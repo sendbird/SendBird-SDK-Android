@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.10 (Apr 4, 2022)
+- Improved stability.
+
 ### v3.1.9 (Mar 29, 2022)
 - Fixed NPE in `AbstractPushHandlers.isUniquePushToken()`.
 - Fixed bugs.
