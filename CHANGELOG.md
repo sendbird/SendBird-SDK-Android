@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.11 (Apr 20, 2022)
+- Fix a bug where an auto-resendable messages could've been sent multiple times.
+
 ### v3.1.10 (Apr 4, 2022)
 - Improved stability.
 
