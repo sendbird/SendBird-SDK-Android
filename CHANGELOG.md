@@ -1,5 +1,12 @@
 # Change Log
 
+### v3.1.12 (April 27, 2022)
+- Added `HiddenChannelFilter.ALL`.
+- Fixed bug where nicknameContainsFilter is filtered incorrectly in regards to case sensitivity.
+
+### v3.1.11 (Apr 20, 2022)
+- Fix a bug where an auto-resendable messages could've been sent multiple times.
+
 ### v3.1.11 (Apr 20, 2022)
 - Fix a bug where an auto-resendable messages could've been sent multiple times.
 

@@ -1,8 +1,8 @@
-# [Sendbird](https://sendbird.com) Chat SDK for Android
+[Sendbird](https://sendbird.com) Chat SDK for Android
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
-[![Maven](https://img.shields.io/badge/maven-v3.1.11-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.1.11)
+[![Maven](https://img.shields.io/badge/maven-v3.1.12-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.1.12)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
 
 ## Table of contents
@@ -94,7 +94,7 @@ Then, add the dependency to the project's top-level `build.gradle` file:
 ```gradle
 dependencies {
     ...
-    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.1.11'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.1.12'
     ...
 }
 ```
@@ -111,7 +111,7 @@ TLS 1.3 support is included in version 3.0.106 of the SendBird Android SDK. TLS 
 
 ```gradle
 dependencies {
-    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.1.11') {
+    implementation ('com.sendbird.sdk:sendbird-android-sdk:3.1.12') {
         exclude group: 'org.conscrypt', module: 'conscrypt-android'
     }
 }
