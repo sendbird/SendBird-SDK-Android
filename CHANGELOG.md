@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.13 (May 10, 2022)
+- Fill `BaseMessage.mentionedUsers` payload in pending messages if it was set by `BaseMessageParams.setMentionedUsers()`.
+
 ### v3.1.12 (April 27, 2022)
 - Added `HiddenChannelFilter.ALL`.
 - Fixed bug where nicknameContainsFilter is filtered incorrectly in regards to case sensitivity.
