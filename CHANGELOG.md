@@ -1,5 +1,8 @@
 # Change Log
 
+### v3.1.14 (May 31, 2022)
+- Improved stability.
+
 ### v3.1.13 (May 10, 2022)
 - Fill `BaseMessage.mentionedUsers` payload in pending messages if it was set by `BaseMessageParams.setMentionedUsers()`.
 
