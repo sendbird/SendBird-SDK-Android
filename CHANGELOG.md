@@ -1,4 +1,4 @@
-# Change Log
+# Changelog
 
 ### v3.1.14 (May 31, 2022)
 - Improved stability.
