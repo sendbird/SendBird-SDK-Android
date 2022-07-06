@@ -1,5 +1,12 @@
 # Changelog
 
+### v3.1.16 (Jul 6, 2022)
+- Return error when empty or null value is passed on as APP_ID in `SendBird.init()`
+- Fixed a bug where when reconnected, an updated message gets removed and added again in `MessageCollection`
+
+### v3.1.15 (Jun 7, 2022)
+- Improved stability.
+
 ### v3.1.14 (May 31, 2022)
 - Improved stability.
 
