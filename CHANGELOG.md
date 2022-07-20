@@ -1,5 +1,8 @@
 # Changelog
 
+### v3.1.17 (Jul 20, 2022)
+- Changed way to detect internet availabilty when uploading a file
+
 ### v3.1.16 (Jul 6, 2022)
 - Return error when empty or null value is passed on as APP_ID in `SendBird.init()`
 - Fixed a bug where when reconnected, an updated message gets removed and added again in `MessageCollection`
