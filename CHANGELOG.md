@@ -1,5 +1,8 @@
 # Changelog
 
+### v3.1.18 (Jul 27, 2022)
+- Improved memory management related to network I/O to reduce memory usage
+
 ### v3.1.17 (Jul 20, 2022)
 - Changed way to detect internet availabilty when uploading a file
 
