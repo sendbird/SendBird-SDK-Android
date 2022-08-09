@@ -1,5 +1,8 @@
 # Changelog
 
+### v3.1.19 (Aug 9, 2022)
+- Improved thread management to reduce total thread count
+
 ### v3.1.18 (Jul 27, 2022)
 - Improved memory management related to network I/O to reduce memory usage
 
