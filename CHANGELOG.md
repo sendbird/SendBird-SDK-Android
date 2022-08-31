@@ -1,5 +1,10 @@
 # Changelog
 
+### v3.1.20 (Aug 31, 2022)
+- Added MessageSearchQuery's totalCount and made it public (MessageSearchQuery.getTotalCount())
+- Implemented channel membership history where clients can retrieve whether users have joined or left the channel (`MemberState.LEFT` for left members of a `GroupChannel`)
+- Fixed a bug where `onSessionTokenRequired()` is not called immediately after session expires
+
 ### v3.1.19 (Aug 9, 2022)
 - Improved thread management to reduce total thread count
 
