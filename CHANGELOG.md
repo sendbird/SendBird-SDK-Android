@@ -1,5 +1,8 @@
 # Changelog
 
+### v3.1.21 (Sep 5, 2022)
+- Improved stability
+
 ### v3.1.20 (Aug 31, 2022)
 - Added MessageSearchQuery's totalCount and made it public (MessageSearchQuery.getTotalCount())
 - Implemented channel membership history where clients can retrieve whether users have joined or left the channel (`MemberState.LEFT` for left members of a `GroupChannel`)
