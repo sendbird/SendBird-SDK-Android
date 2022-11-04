@@ -1,5 +1,8 @@
 # Changelog
 
+### v3.1.22 (Nov 4, 2022)
+- Fixed an `IllegalArgumentException` from serializing the `FileMessage.fileMessageParams` when it contained an additional property that the SDK is not aware of
+
 ### v3.1.21 (Sep 5, 2022)
 - Improved stability
 
