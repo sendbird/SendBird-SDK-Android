@@ -1,5 +1,8 @@
 # Changelog
 
+### v3.1.24 (Dec 21, 2022)
+- Fixed unread message count to be updated when an unread message is deleted
+
 ### v3.1.23 (Nov 23, 2022)
 - Improved stability
 
