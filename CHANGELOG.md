@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.25 (Mar 6, 2023)
+### Improvements
+- Fixed an issue where the okhttp library throws an `IllegalArgumentException: port out of range:-1` error and causes a crash.
+
 ### v3.1.24 (Dec 21, 2022)
 - Fixed unread message count to be updated when an unread message is deleted
 
