@@ -1,9 +1,16 @@
-[Sendbird](https://sendbird.com) Chat SDK for Android
+# [Sendbird](https://sendbird.com) Chat SDK v3 for Android
 
 [![Platform](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Languages](https://img.shields.io/badge/language-java-orange.svg)](https://github.com/sendbird/SendBird-SDK-Android)
 [![Maven](https://img.shields.io/badge/maven-v3.1.27-green.svg)](https://github.com/sendbird/SendBird-SDK-Android/tree/master/com/sendbird/sdk/sendbird-android-sdk/3.1.27)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-Android/blob/master/LICENSE.md)
+
+## Deprecation Note (v3)
+:warning: Please note that Sendbird’s SDK v3 will be deprecated by **July 2023**. You may still use the older SDKs at your choice, but no new updates or bug fixes will be made to SDK v3.
+
+**We recommend clients to plan their migration to SDK v4 as early as possible as there are breaking changes.** We also provide prioritized support for migration and any issues related to v4. SDK v4 provides far richer and robust features in Websocket, Local caching, Polls, Scheduled Messages, Pinned Message, and many more. So try it out now! ([Chat SDK v4](https://github.com/sendbird/sendbird-chat-sdk-android/))
+
+<br />
 
 ## Table of contents
 
