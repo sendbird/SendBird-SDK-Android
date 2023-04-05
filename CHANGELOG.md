@@ -375,6 +375,18 @@
 
 ### v3.0.127 (Apr 21, 2020)
 * Improved stability.
+* Added flag `show_delivery_receipt` for channel GET API endpoints
+  * Following endpoints will now have `show_delivery_receipt`
+
+       ```
+       GET https://api-{application_id}.sendbird.com/v3/group_channels       
+       GET https://api-{application_id}.sendbird.com/v3/group_channels/{channel_url}       
+       GET https://api-{application_id}.sendbird.com/v3/group_channels/{channel_url}/members
+       ```
+
+* Changed the parameter key of `read_receipt` 
+   * `read_receipt` key value being used in the `buildParameterForGettingGroupChannelWithMember` function has been deprececated.
+   * It should be changed to the key value of `show_read_receipt`
 
 ### v3.0.126 (Mar 31, 2020)
 * Stabilize connection state.
